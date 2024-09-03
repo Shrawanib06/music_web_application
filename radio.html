@@ -98,6 +98,7 @@
                 <div class="radio-banner">
                     <div class="radio">
                         <img class="gif" src="giphy (1).gif" alt="">
+                        <img class="gifimg" style="display: none;" src="giphy (1).png" alt="">
                         <img class="jpg" src="vinyl.jpg" alt="">
                     </div>
                     <div class="banner-content">
@@ -110,12 +111,16 @@
                                 <div class="music-wave">
                                     <div id="waveform"></div>
                                 </div>
-                                <div class="retro-playing">
-                                    <i class="fa-solid fa-backward" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-pause" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-forward" style="color: #ffffff;"></i>
-                                    <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                <div class="retro-playing" id="icon">
+                                    <div class="playing">
+                                        <i class="fa-solid fa-backward" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                                        <i class="fa-solid fa-pause" style="color: #ffffff; display: none;"></i>
+                                        <i class="fa-solid fa-forward" style="color: #ffffff;"></i>
+                                    </div>
+                                    <div class="like">
+                                        <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                    </div>
                                 </div>
                             </div>
                             <div class="retro-img">
@@ -509,24 +514,60 @@
     </div>
 
     <script>
-        const wavesurfer = WaveSurfer.create({
-            container: '#waveform',
-            waveColor: 'yellow',
+        var playIcon = document.querySelector('.fa-play');
+        var pauseIcon = document.querySelector('.fa-pause');
+        var waveformContainer = document.getElementById('waveform');
+        var gif = document.querySelector('.gif');
+        var jpeg = document.querySelector('.gifimg');
+
+        var wavesurfer = WaveSurfer.create({
+            container: waveformContainer,
+            waveColor: '#8a1cff',
             progressColor: 'white',
             cursorColor: 'white',
-            barWidth: 4,
-            responsive: 'true',
-            height: 90,
-            barRadius: 4
+            barWidth: 3,
+            responsive: true,
+            height: 60,
+            barRadius: 3
         });
-        wavesurfer.load('Lover.mp3');
 
-        icon.onclick = function(){
+        wavesurfer.load('Lover.mp3');
+        jpeg.style.display = 'block';
+        // Hide the GIF initially
+        gif.style.display = 'none';
+
+        // Toggle Play and Pause
+        function togglePlayPause() {
             wavesurfer.playPause();
-            if(icon.scroll.includes("/img/play.png")){
-                icon.src="/img/pause.png";
+            if (wavesurfer.isPlaying()) {
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline-block';
+                gif.style.display = 'block'; // Show GIF when playing
+                jpeg.style.display = 'none'; // Hide JPEG
+            } else {
+                playIcon.style.display = 'inline-block';
+                pauseIcon.style.display = 'none';
+                gif.style.display = 'none'; // Hide GIF when paused or stopped
+                jpeg.style.display = 'block'; // Show JPEG
             }
         }
+
+        // Play button click event
+        playIcon.onclick = togglePlayPause;
+
+        // Pause button click event
+        pauseIcon.onclick = togglePlayPause;
+
+        // Reset when the song finishes
+        wavesurfer.on('finish', function () {
+            playIcon.style.display = 'inline-block';
+            pauseIcon.style.display = 'none';
+            gif.style.display = 'none'; // Hide GIF when song finishes
+            jpeg.style.display = 'block'; // Show JPEG
+            wavesurfer.stop();
+        });
+
+
     </script>
 </body>
 
