@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0a0012;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-color: #150025;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    gap: 800px;
+}
+
+.left{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav .right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .right ul li{
+    margin: 0 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav .right ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 4px 10px;
+}
+
+.signin{
+    background-color: #8e9295;
+    color: #150025;
+    border-radius: 10px;
+    border: 2px solid #8e9295;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.signin:hover{
+    border: 2px solid #8e9295;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: #150025;
+    color: white;
+}
+
+.login {
+    border: 2px solid #8e9295;
+    border-radius: 10px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #8e9295;
+    color: #150025;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    padding: 20px;
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+}
+
+.heading{
+    font-size: 40px;
+}
+
+button{
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview .title {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.artist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.artist h3 {
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.artist .title {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature .title{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+footer{
+    background-color: #8e9295;
+}

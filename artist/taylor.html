@@ -1,0 +1,186 @@
+<div class="artist_page taylor">
+    <div class="left">
+        <h1>Taylor Swift</h1>
+        <button>Follow</button>
+    </div>
+    <div class="right" id="right">
+        <div class="header">
+            <ul>
+                <li onclick="displayArtist('artist/taylor-overview.html')" id="default">Overview</li>
+                <li onclick="displayArtist('artist/taylor-related.html')">Related</li>
+                <li onclick="displayArtist('artist/taylor-video.html')">Videos</li>
+                <li onclick="displayArtist('artist/taylor-about.html')">About</li>
+            </ul>
+        </div>
+        <div class="popular">
+            <h4>Popular</h4>
+            <div class="songs-list">
+                <div class="number">01</div>
+                <div class="loverimg"></div>
+                <div class="album-song-title">Lover</div>
+                <div class="likes">
+                    <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
+                    <div class="loved">1.5k</div>
+                </div>
+                <div class="time">3.42</div>
+            </div>
+            <div class="songs-list">
+                <div class="number">02</div>
+                <div class="loverimg"></div>
+                <div class="album-song-title">Cruel Summer</div>
+                <div class="likes">
+                    <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
+                    <div class="loved">1.5k</div>
+                </div>
+                <div class="time">2.59</div>
+            </div>
+            <div class="songs-list">
+                <div class="number">03</div>
+                <div class="eightynineimg"></div>
+                <div class="album-song-title">Blank Space</div>
+                <div class="likes">
+                    <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
+                    <div class="loved">1.5k</div>
+                </div>
+                <div class="time">2.59</div>
+            </div>
+            <div class="songs-list">
+                <div class="number">04</div>
+                <div class="speaknowimg"></div>
+                <div class="album-song-title">Enchanted</div>
+                <div class="likes">
+                    <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
+                    <div class="loved">1.5k</div>
+                </div>
+                <div class="time">4.48</div>
+            </div>
+            <div class="songs-list">
+                <div class="number">05</div>
+                <div class="folkloreimg"></div>
+                <div class="album-song-title">august</div>
+                <div class="likes">
+                    <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
+                    <div class="loved">1.5k</div>
+                </div>
+                <div class="time">3.43</div>
+            </div>
+        </div>
+
+        <div class="album">
+            <h4>Albums</h4>
+            <div class="container">
+                <div class="section">
+                    <div class="box">
+                        <div class="box-content" onclick="loadContent('album/lover.html')">
+                            <div class="box-img" id="box-img-lover" style="background-image: url('images/lover.jfif');">
+                            </div>
+                            <div class="box-text">
+                                <p>Lover (2019)</p>
+                                <!-- <button onclick="loadContent('album/lover.html')">Listen Now</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content" onclick="loadContent('album/speaknow.html')">
+                            <div class="box-img" id="box-img-speaknow"
+                                style="background-image: url('images/speaknow.jfif');"></div>
+                            <div class="box-text">
+                                <p>Speak Now (2010)</p>
+                                <!-- <button onclick="loadContent('album/speaknow.html')">Listen Now</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content" onclick="loadContent('album/1989.html')">
+                            <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                            <div class="box-text">
+                                <p>1989 (2014)</p>
+                                <!-- <button onclick="loadContent('album/1989.html')">Listen Now</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="box">
+                        <div class="box-content" onclick="loadContent('album/red.html')">
+                            <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                            <div class="box-text">
+                                <p>Red (2012)</p>
+                                <!-- <button onclick="loadContent('album/red.html')">Listen Now</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content" onclick="loadContent('album/folklore.html')">
+                            <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                            <div class="box-text">
+                                <p>Folklore (2020)</p>
+                                <!-- <button onclick="loadContent('album/folklore.html')">Listen Now</button> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-content" onclick="loadContent('album/lover.html')">
+                            <div class="box-img" style="background-image: url('images/reputation.jpg');"></div>
+                            <div class="box-text">
+                                <p>Reputation (2017)</p>
+                                <!-- <button onclick="loadContent('album/folklore.html')">Listen Now</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour">
+            <h4>Upcoming Tour Dates</h4>
+            <div class="upcoming">
+                <div class="tour-details">
+                    <div class="tour-heading">
+                        <div class="tour-title">Eras Tour:</div>
+                            <p>SoFi Stadium, Los Angeles, CA</p>
+                            <p>A full day of performances, celebrating all of Taylor Swift’s eras from Fearless to
+                                Midnights.</p>
+                            <button>Book now</button>
+                    </div>
+                    <div class="tour-date">
+                        <h1>24</h1>
+                        <div class="month">Aug</div>
+                    </div>
+                </div>
+                <div class="tour-details">
+                    <div class="tour-heading">
+                        <div class="tour-title">Eras Tour:</div>
+                            <p>Allegiant Stadium, Las Vegas, NV</p>
+                            <p>Taylor brings her legendary show to the entertainment capital of the world.</p>
+                            <button>Book now</button>
+                    </div>
+                    <div class="tour-date">
+                        <h1>01</h1>
+                        <div class="month">Sept</div>
+                    </div>
+                </div>
+                <div class="tour-details">
+                    <div class="tour-heading">
+                        <div class="tour-title">Eras Tour:</div>
+                            <p>MetLife Stadium, East Rutherford, NJ</p>
+                            <p>A major event for East Coast fans, showcasing her greatest hits.</p>
+                            <button>Book now</button>
+                    </div>
+                    <div class="tour-date">
+                        <h1>08</h1>
+                        <div class="month">Sept</div>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-subtitle">
+                <ul>
+                    <li>Past Tour Highlights</li>
+                    <li>Tour Merchandise</li>
+                    <li>Fan Experiences</li>
+                    <li>Travel and Accommodation</li>
+                    <li>Social Media Integration</li>
+                </ul>
+            </div>
+        </div>
+    </div>

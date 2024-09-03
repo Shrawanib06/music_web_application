@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="radio.css">
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <title>Panda</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="sidebar" id="sidebar">
+            <div class="name">Panda</div>
+            <div class="section">
+                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
+                <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i>Explore</button></a>
+                <a href="library.html"><button><i class="fa-solid fa-book"
+                            style="color: #ffffff;"></i>Library</button></a>
+                <a href="genres.html"><button><i class="fa-solid fa-list"
+                            style="color: #ffffff;"></i>Genres</button></a>
+                <a href="radio.html"><button class="default"><i class="fa-solid fa-radio"
+                            style="color: #ffffff;"></i>Radio</button></a>
+            </div>
+            <div class="section">
+                <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
+                            class="icon">Playlist</button></a>
+                <a href="user-playlist.html"><button>User playlist</button></a>
+                <a href="like-songs.html"><button>Like songs</button></a>
+            </div>
+            <div class="section">
+                <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
+                        Features</button></a>
+                <a href="friends.html"><button>Friends</button></a>
+                <a href="community.html"><button>Community</button></a>
+                <a href="following.html"><button>Following</button></a>
+            </div>
+            <div class="section">
+                <a href="settings.html"><button><i class="fa-solid fa-gear"
+                            style="color: #ffffff;"></i>Settings</button></a>
+                <a href="account-settings.html"><button>Account settings</button></a>
+                <a href="preferences.html"><button>Preferences</button></a>
+                <a href="notification.html"><button>Notification</button></a>
+                <a href="appearance.html"><button>Appearance</button></a>
+            </div>
+            <div class="section">
+                <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
+                            style="color: #ffffff;"></i>Help & Support</button></a>
+                <a href="help-center.html"><button>Help center</button></a>
+                <a href="contact-support.html"><button>Contact support</button></a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 Panda Music</p>
+                <p><a href="#privacy-policy">Privacy Policy</a></p>
+                <p><a href="#terms-of-service">Terms of Service</a></p>
+                <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
+            </div>
+        </div>
+
+        <div class="radiopage">
+            <div class="banner">
+
+                <nav id="nav-bar">
+                    <div class="left">
+                        <div class="search-box">
+                            <div class="row">
+                                <input type="text" id="input-box" placeholder="Search for songs, artists, or albums…"
+                                    autocomplete="off">
+                                <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="signin">Sign up</li>
+                            <li class="login">Sign in</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="radio-banner">
+                    <div class="radio">
+                        <img class="gif" src="giphy (1).gif" alt="">
+                        <img class="jpg" src="vinyl.jpg" alt="">
+                    </div>
+                    <div class="banner-content">
+                        <h1>Radio Waves</h1>
+                        <h4>Start with This Top Pick</h4>
+                        <div class="retro-song">
+                            <div class="retro-song-name">
+                                <p>Chura Liya Hai Tumne Jo Dil Ko</p>
+                                <p>Artist Name: Mohammed Rafi, Asha Bhosle</p>
+                                <div class="music-wave">
+                                    <div id="waveform"></div>
+                                </div>
+                                <div class="retro-playing">
+                                    <i class="fa-solid fa-backward" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-pause" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-forward" style="color: #ffffff;"></i>
+                                    <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                            <div class="retro-img">
+                                <img src="images/chura liya.jfif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="playlist" id="playlist">
+                    <h3>Classic Hits Radio</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Golden 50s & 60s</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Romantic 70s</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Groovy 80s</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Melodic 90s</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Timeless Duets</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Decade-Specific Stations</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Fabulous 50s</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Sensational 60s</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Superstar 70s</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Energetic 80s</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Nostalgic 90s</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Genre Classics</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Romantic Classics</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Bollywood Dance Hits</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Qawwali & Sufi</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Devotional Melodies</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Folk Inspirations</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Legendary Artists</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Lata Mangeshkar Hits</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Kishore Kumar Specials</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>R.D. Burman Magic</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Mohammed Rafi Radio</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Asha Bhosle Grooves</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Retro Remixes</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Bollywood Beats Reimagined</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Retro Remixed</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Mashup Magic</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Classics with a Twist</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>New Age Disco</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Retro Talk & Stories</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Behind the Music</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Retro Interviews</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Filmy Flashback</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Voice of Legends</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Old-School Radio Shows</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Themed Hours</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Raj Kapoor Hour</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Romance Hour</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Dance Fever</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Bollywood Legends</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Sholay Special</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'yellow',
+            progressColor: 'white',
+            cursorColor: 'white',
+            barWidth: 4,
+            responsive: 'true',
+            height: 90,
+            barRadius: 4
+        });
+        wavesurfer.load('Lover.mp3');
+
+        icon.onclick = function(){
+            wavesurfer.playPause();
+            if(icon.scroll.includes("/img/play.png")){
+                icon.src="/img/pause.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

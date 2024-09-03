@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css">
+    <title>Panda</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="sidebar" id="sidebar">
+            <div class="name">Panda</div>
+            <div class="section">
+                <a href="home.html"><button class="default"><i class="fa-solid fa-house"
+                            style="color: #ffffff;"></i>Home</button></a>
+                <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i>Explore</button></a>
+                <a href="library.html"><button><i class="fa-solid fa-book"
+                            style="color: #ffffff;"></i>Library</button></a>
+                <!-- <a href="genres.html"><button><i class="fa-solid fa-list"
+                            style="color: #ffffff;"></i>Genres</button></a> -->
+                <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
+            </div>
+            <div class="section">
+                <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
+                            class="icon">Playlist</button></a>
+                <a href="user-playlist.html"><button>User playlist</button></a>
+                <a href="like-songs.html"><button>Like songs</button></a>
+            </div>
+            <div class="section">
+                <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
+                        Features</button></a>
+                <a href="friends.html"><button>Friends</button></a>
+                <a href="community.html"><button>Community</button></a>
+                <a href="following.html"><button>Following</button></a>
+            </div>
+            <div class="section">
+                <a href="settings.html"><button><i class="fa-solid fa-gear"
+                            style="color: #ffffff;"></i>Settings</button></a>
+                <a href="account-settings.html"><button>Account settings</button></a>
+                <a href="preferences.html"><button>Preferences</button></a>
+                <a href="notification.html"><button>Notification</button></a>
+                <a href="appearance.html"><button>Appearance</button></a>
+            </div>
+            <div class="section">
+                <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
+                            style="color: #ffffff;"></i>Help & Support</button></a>
+                <a href="help-center.html"><button>Help center</button></a>
+                <a href="contact-support.html"><button>Contact support</button></a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 Panda Music</p>
+                <p><a href="#privacy-policy">Privacy Policy</a></p>
+                <p><a href="#terms-of-service">Terms of Service</a></p>
+                <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
+            </div>
+        </div>
+
+        <div class="homepage" id="homepage">
+            <div class="page" id="page">
+                <div class="banner">
+                    <nav id="nav-bar">
+                        <div class="left">
+                            <div class="search-box">
+                                <div class="row">
+                                    <input type="text" id="input-box"
+                                        placeholder="Search for songs, artists, or albums…" autocomplete="off">
+                                    <button><i class="fa-solid fa-magnifying-glass"
+                                            style="color: #ffffff;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li class="signin">Sign up</li>
+                                <li class="login">Sign in</li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="content">
+                        <h1>Today's most played</h1>
+                        <h3>"Cruel Summer" by Taylor Swift</h3>
+                        <p>A vibrant pop anthem from her album "Lover," capturing the exhilarating and tumultuous
+                            emotions
+                            of a summer romance with catchy melodies and heartfelt lyrics.</p>
+                        <button
+                            onclick="playSong('songs/Cruel_Summer.mp3', 'Cruel Summer', 'Taylor Swift', 'images/lover.jfif', 'August 23, 2019', 'Pop', '2:59', '1.2M', 'This is such a great song!')">
+                            Play Now
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="main">
+                    <div class="playlist" id="playlist">
+                        <h3>Some Popular Albums by Taylor Swift</h3>
+                        <div class="albums">
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" id="box-img-lover"
+                                        style="background-image: url('images/lover.jfif');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Lover (2019)</p>
+                                        <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" id="box-img-speaknow"
+                                        style="background-image: url('images/speaknow.jfif');"></div>
+                                    <div class="box-text">
+                                        <p>Speak Now (2010)</p>
+                                        <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                    <div class="box-text">
+                                        <p>1989 (2014)</p>
+                                        <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                    <div class="box-text">
+                                        <p>Red (2012)</p>
+                                        <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                    <div class="box-text">
+                                        <p>Folklore (2020)</p>
+                                        <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trending" id="trending">
+                        <h3>Trending</h3>
+                        <div class="albums">
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/munjya.jpg');"></div>
+                                    <div class="box-text">
+                                        <p>Tainu khabar nahi</p>
+                                        <p style="color: gray; font-size: 11px;">Artists: Arijit Singh, Sachin–...</p>
+                                        <button
+                                            onclick="playSong('songs/Tainu khabar nahi.mpeg', 'Tainu khabar nahi', 'Artists: Arijit Singh, Sachin–...', 'images/munjya.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/nadaniya.jpg');"></div>
+                                    <div class="box-text">
+                                        <p>Nadaaniyan</p>
+                                        <p style="color: gray; font-size: 11px;">Artist: Akshath</p>
+                                        <button
+                                            onclick="playSong('songs/Nadaaniyan.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/nadaniya.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/Sajni.jpg');"></div>
+                                    <div class="box-text">
+                                        <p>Sajni</p>
+                                        <p style="color: gray; font-size: 11px;">Artist: Arijit Singh</p>
+                                        <button
+                                            onclick="playSong('songs/sajni.mp3', 'Sajni', 'Artist: Akshath', 'images/sajni.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/tauba\ tauba.png');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Tauba Tauba</p>
+                                        <p style="color: gray; font-size: 11px;">Artist: Karan Aujla</p>
+                                        <button
+                                            onclick="playSong('songs/Tauba Tauba.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/tauba tauba.png', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/ve\ kamleya.jpg');"></div>
+                                    <div class="box-text">
+                                        <p>ve kamleya</p>
+                                        <p style="color: gray; font-size: 11px;">Artists: Arijit Singh, Shre...
+                                        </p>
+                                        <button
+                                            onclick="playSong('songs/Ve Kamleya.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/ve\ kamleya.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new" id="new">
+                        <h3>New releases</h3>
+                        <div class="albums">
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/naina.jfif');"></div>
+                                    <div class="box-text">
+                                        <p>Naina</p>
+                                        <p style="color: gray; font-size: 11px;">Artists: Diljit Dosanjh...</p>
+                                        <button
+                                            onclick="playSong('songs/Naina.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/naina.jfif', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/tauba\ tauba.png');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Tauba Tauba</p>
+                                        <p style="color: gray; font-size: 11px;">Artist: Karan Aujla</p>
+                                        <button
+                                            onclick="playSong('songs/Tauba Tauba.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/tauba tauba.png', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/Akhiyaan-Gulaab.jpg');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Akhiyaan Gulaab</p>
+                                        <p style="color: gray; font-size: 11px;">Artist: Mitraz</p>
+                                        <button
+                                            onclick="playSong('songs/Akhiyan-Gulab.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/Akhiyaan-Gulaab.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/dekha\ tenu.jpg');"></div>
+                                    <div class="box-text">
+                                        <p>Dekha tenu</p>
+                                        <p style="color: gray; font-size: 11px;">Artist: Mahbub Islam</p>
+                                        <button
+                                            onclick="playSong('songs/Dekha-Tenu.mp3', 'Nadaaniyan', 'Artist: Akshath', 'images/dekha\ tenu.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height">
+                                    <div class="box-img" style="background-image: url('images/munjya.jpg');"></div>
+                                    <div class="box-text">
+                                        <p>Tainu khabar nahi</p>
+                                        <p style="color: gray; font-size: 11px;">Artists: Arijit Singh, Sachin–...</p>
+                                        <button
+                                            onclick="playSong('songs/Tainu khabar nahi.mpeg', 'Tainu khabar nahi', 'Artists: Arijit Singh, Sachin–...', 'images/munjya.jpg', 'June 12, 2024', 'Romantic', '2:38', '1.2M', 'This is such a great song!')">Listen
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="genres" id="genres">
+                        <h3>Genres</h3>
+                        <div class="albums">
+                            <div class="box">
+                                <div class="box-content height2">
+                                    <div class="box-img" onclick="loadContent('genre/relax.html')"
+                                        style="background: linear-gradient(to right, #0a00c7, #00a9fb);">
+                                        Relaxing</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height2">
+                                    <div class="box-img" onclick="loadContent('genre/party.html')"
+                                        style="background: linear-gradient(to right, #f30707, #ff7c09);">
+                                        Party</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height2">
+                                    <div class="box-img" onclick="loadContent('genre/travel.html')"
+                                        style="background: linear-gradient(to right, #006522, #07ff27);">
+                                        Travel</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height2">
+                                    <div class="box-img" onclick="loadContent('genre/romantic.html')"
+                                        style="background: linear-gradient(to right, #fd002c, #f164aa);">
+                                        Romantic</div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content height2">
+                                    <div class="box-img" onclick="loadContent('genre/motivational.html')"
+                                        style="background: linear-gradient(to right, #FF4500, #FFD700);">
+                                        Motivational</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="artist" id="artists">
+                        <h3>Artists</h3>
+                        <div class="albums">
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/Taylor Swift.jpg');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Taylor Swift</p>
+                                        <button onclick="loadContent('artist/taylor.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/arijit\ singh.jfif');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Arijit Singh</p>
+                                        <button onclick="loadContent('artist/arijit.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/shreya\ ghoshal.jfif');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Shreya Ghoshal</p>
+                                        <button onclick="loadContent('artist/shreya.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/ed\ sheeren.jfif');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Ed Sheeran</p>
+                                        <button onclick="loadContent('artist/edsheeren.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-content">
+                                    <div class="box-img" style="background-image: url('images/justin\ bieber.jfif');">
+                                    </div>
+                                    <div class="box-text">
+                                        <p>Justin Bieber</p>
+                                        <button onclick="loadContent('artist/justin.html')">Listen Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ongoing-song" id="ongoing-song" style="display: none;">
+        <h3>Now Playing</h3>
+        <div class="song-info">
+            <img src="" alt="Song Cover" class="song-cover" id="song-cover">
+            <div class="song-details">
+                <p class="song-title" id="song-title"></p>
+                <p class="song-artist" id="song-artist"></p>
+                <div class="button">
+                    <button>Share</button>
+                    <button>Add to Playlist</button>
+                </div>
+                <div class="song">
+                    <p>Release date: <span id="release-date"></span></p>
+                    <p>Genre: <span id="genre"></span></p>
+                    <p>Duration of the song: <span id="duration"></span></p>
+                    <p>Likes: <span id="likes"></span></p>
+                    <p>Comments: <span id="comments"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="music-player" class="music-player">
+        <audio id="audio-player" controls>
+            <source id="audio-source" src="" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function playSong(song, title, artist, cover, releaseDate, genre, duration, likes, comments) {
+            const musicPlayer = document.getElementById('music-player');
+            const audioSource = document.getElementById('audio-source');
+            const audioPlayer = document.getElementById('audio-player');
+            const ongoingSong = document.getElementById('ongoing-song');
+            const sidebar = document.getElementById('sidebar');
+            const homepage = document.getElementById('homepage');
+            const page = document.getElementById('page');
+            const navBar = document.getElementById('nav-bar');
+            const playlist = document.getElementById('playlist');
+            const trending = document.getElementById('trending');
+            const newReleases = document.getElementById('new');
+            const genres = document.getElementById('genres');
+            const boxImgs = document.querySelectorAll('.box-img');
+            const boxContent = document.querySelectorAll('.box-content');
+            const boxContentHeight = document.querySelectorAll('.height');
+            const boxContentHeight2 = document.querySelectorAll('.height2');
+
+            // Set the source of the audio and play the song
+            audioSource.src = song;
+            audioPlayer.load();
+            audioPlayer.play();
+
+            // Show the music player and ongoing song section
+            musicPlayer.style.display = 'flex';
+            ongoingSong.style.display = 'block';
+
+            // Apply specific styles to page, navBar, sidebar, ongoing song, and box-img
+            homepage.classList.add('playing');
+            page.classList.add('playing-page');
+            navBar.classList.add('playing-nav');
+            sidebar.classList.add('playing-sidebar');
+            ongoingSong.classList.add('playing-ongoing-song');
+            playlist.classList.add('playing-playlist');
+            trending.classList.add('playing-trending');
+            newReleases.classList.add('playing-new');
+            genres.classList.add('playing-genres');
+
+            // Apply the 'playing-img' class to all box-img elements
+            boxImgs.forEach(function (img) {
+                img.classList.add('playing-img');
+            });
+
+            boxContent.forEach(function (content) {
+                content.classList.add('playing-box-content');
+            });
+
+            boxContentHeight.forEach(function (height) {
+                height.classList.add('playing-box-content-height');
+            });
+
+            boxContentHeight2.forEach(function (height2) {
+                height2.classList.add('playing-box-content-height2');
+            });
+
+            // Update the ongoing song details
+            document.getElementById('song-cover').src = cover;
+            document.getElementById('song-title').innerText = title;
+            document.getElementById('song-artist').innerText = artist;
+            document.getElementById('release-date').innerText = releaseDate;
+            document.getElementById('genre').innerText = genre;
+            document.getElementById('duration').innerText = duration;
+            document.getElementById('likes').innerText = likes;
+            document.getElementById('comments').innerText = comments;
+        }
+
+        function loadContent(homepageUrl) {
+            // Store the current classes of the nav-bar
+            const navBar = document.getElementById('nav-bar');
+            const currentNavBarClasses = navBar ? navBar.className : '';
+
+            fetch(homepageUrl)
+                .then(response => response.text())
+                .then(data => {
+                    // Load the new content into the homepage
+                    document.getElementById('homepage').innerHTML = data;
+
+                    // Reapply the stored classes to the nav-bar after loading new content
+                    if (navBar) {
+                        navBar.className = currentNavBarClasses;
+                    }
+
+                    // Ensure that the new content still behaves correctly
+                    const musicPlayer = document.getElementById('music-player');
+                    const ongoingSong = document.getElementById('ongoing-song');
+
+                    // Select all elements with the class "heart-icon"
+                    const heartIcons = document.querySelectorAll('.heart-icon');
+
+                    heartIcons.forEach(heart => {
+                        heart.addEventListener('click', function () {
+                            // Toggle between the fa-regular and fa-solid classes
+                            this.classList.toggle('fa-regular');
+                            this.classList.toggle('fa-solid');
+                        });
+                    });
+
+                    if (musicPlayer && ongoingSong && musicPlayer.style.display === 'flex' && ongoingSong.style.display === 'block') {
+                        // Reapply the 'playing' styles to elements if music is playing
+                        const homepage = document.getElementById('homepage');
+                        const page = document.getElementById('page');
+                        const sidebar = document.getElementById('sidebar');
+                        const playlist = document.getElementById('playlist');
+                        const trending = document.getElementById('trending');
+                        const newReleases = document.getElementById('new');
+                        const genres = document.getElementById('genres');
+                        const boxImgs = document.querySelectorAll('.box-img');
+                        const boxContent = document.querySelectorAll('.box-content');
+                        const boxContentHeight = document.querySelectorAll('.height');
+                        const boxContentHeight2 = document.querySelectorAll('.height2');
+
+                        homepage.classList.add('playing');
+                        page.classList.add('playing-page');
+                        sidebar.classList.add('playing-sidebar');
+                        ongoingSong.classList.add('playing-ongoing-song');
+                        playlist.classList.add('playing-playlist');
+                        trending.classList.add('playing-trending');
+                        newReleases.classList.add('playing-new');
+                        genres.classList.add('playing-genres');
+
+                        boxImgs.forEach(function (img) {
+                            img.classList.add('playing-img');
+                        });
+
+                        boxContent.forEach(function (content) {
+                            content.classList.add('playing-box-content');
+                        });
+
+                        boxContentHeight.forEach(function (height) {
+                            height.classList.add('playing-box-content-height');
+                        });
+
+                        boxContentHeight2.forEach(function (height2) {
+                            height2.classList.add('playing-box-content-height2');
+                        });
+                    }
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+
+        function displayArtist(rightUrl) {
+            fetch(rightUrl)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('right').innerHTML = data;
+
+                    const heartIcons = document.querySelectorAll('.heart-icon');
+                    console.log(heartIcons); // Check if elements are correctly selected
+
+                    heartIcons.forEach(heart => {
+                        heart.addEventListener('click', function () {
+                            console.log('Heart icon clicked'); // Log to confirm click
+                            this.classList.toggle('fa-regular');
+                            this.classList.toggle('fa-solid');
+                        });
+                    });
+
+                    // Additional logic for reapplying music player styles if needed
+                    const musicPlayer = document.getElementById('music-player');
+                    const ongoingSong = document.getElementById('ongoing-song');
+
+                    if (musicPlayer && ongoingSong && musicPlayer.style.display === 'flex' && ongoingSong.style.display === 'block') {
+                        const homepage = document.getElementById('homepage');
+                        const page = document.getElementById('page');
+                        const sidebar = document.getElementById('sidebar');
+                        const playlist = document.getElementById('playlist');
+                        const trending = document.getElementById('trending');
+                        const newReleases = document.getElementById('new');
+                        const genres = document.getElementById('genres');
+                        const boxImgs = document.querySelectorAll('.box-img');
+                        const boxContent = document.querySelectorAll('.box-content');
+                        const boxContentHeight = document.querySelectorAll('.height');
+                        const boxContentHeight2 = document.querySelectorAll('.height2');
+
+                        homepage.classList.add('playing');
+                        page.classList.add('playing-page');
+                        sidebar.classList.add('playing-sidebar');
+                        ongoingSong.classList.add('playing-ongoing-song');
+                        playlist.classList.add('playing-playlist');
+                        trending.classList.add('playing-trending');
+                        newReleases.classList.add('playing-new');
+                        genres.classList.add('playing-genres');
+
+                        boxImgs.forEach(function (img) {
+                            img.classList.add('playing-img');
+                        });
+
+                        boxContent.forEach(function (content) {
+                            content.classList.add('playing-box-content');
+                        });
+
+                        boxContentHeight.forEach(function (height) {
+                            height.classList.add('playing-box-content-height');
+                        });
+
+                        boxContentHeight2.forEach(function (height2) {
+                            height2.classList.add('playing-box-content-height2');
+                        });
+                    }
+                })
+                .catch(error => console.error('Error loading content:', error));
+        }
+
+    </script>
+
+</body>
+
+</html>
