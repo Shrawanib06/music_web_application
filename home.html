@@ -393,36 +393,39 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="ongoing-song" id="ongoing-song" style="display: none;">
-        <h3>Now Playing</h3>
-        <div class="song-info">
-            <img src="" alt="Song Cover" class="song-cover" id="song-cover">
-            <div class="song-details">
-                <p class="song-title" id="song-title"></p>
-                <p class="song-artist" id="song-artist"></p>
-                <div class="button">
-                    <button>Share</button>
-                    <button>Add to Playlist</button>
+        <div class="ongoing-song" id="ongoing-song" style="display: none;">
+            <h3>Now Playing</h3>
+            <div class="song-info">
+                <img src="" alt="Song Cover" class="song-cover" id="song-cover">
+                <div class="song-details">
+                    <p class="song-title" id="song-title"></p>
+                    <p class="song-artist" id="song-artist"></p>
+                    <div class="button">
+                        <button>Share</button>
+                        <button>Add to Playlist</button>
+                    </div>
+                    <div class="song">
+                        <p>Release date: <span id="release-date"></span></p>
+                        <p>Genre: <span id="genre"></span></p>
+                        <p>Duration of the song: <span id="duration"></span></p>
+                        <p>Likes: <span id="likes"></span></p>
+                        <p>Comments: <span id="comments"></span></p>
+                    </div>
                 </div>
-                <div class="song">
-                    <p>Release date: <span id="release-date"></span></p>
-                    <p>Genre: <span id="genre"></span></p>
-                    <p>Duration of the song: <span id="duration"></span></p>
-                    <p>Likes: <span id="likes"></span></p>
-                    <p>Comments: <span id="comments"></span></p>
-                </div>
+            </div>
+        </div>
+
+        <div class="music">
+            <div id="music-player" class="music-player">
+                <audio id="audio-player" controls>
+                    <source id="audio-source" src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
         </div>
     </div>
 
-    <div id="music-player" class="music-player">
-        <audio id="audio-player" controls>
-            <source id="audio-source" src="" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
 
     <script>
         function playSong(song, title, artist, cover, releaseDate, genre, duration, likes, comments) {

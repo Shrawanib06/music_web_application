@@ -26,14 +26,13 @@
         <div class="sidebar" id="sidebar">
             <div class="name">Panda</div>
             <div class="section">
-                <a href="home.html"><button><i class="fa-solid fa-house"
-                            style="color: #ffffff;"></i>Home</button></a>
+                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
                 <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
                             style="color: #ffffff;"></i>Explore</button></a>
                 <a href="library.html"><button class="default"><i class="fa-solid fa-book"
                             style="color: #ffffff;"></i>Library</button></a>
-                <a href="genres.html"><button><i class="fa-solid fa-list"
-                            style="color: #ffffff;"></i>Genres</button></a>
+                <!-- <a href="genres.html"><button><i class="fa-solid fa-list"
+                            style="color: #ffffff;"></i>Genres</button></a> -->
                 <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
             </div>
             <div class="section">
@@ -70,6 +69,283 @@
                 <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
             </div>
         </div>
+
+        <div class="librarypage">
+            <div class="banner">
+                <nav id="nav-bar">
+                    <div class="left">
+                        <div class="search-box">
+                            <div class="row">
+                                <input type="text" id="input-box" placeholder="Search for songs, artists, or albums…"
+                                    autocomplete="off">
+                                <button><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li class="signin">Sign up</li>
+                            <li class="login">Sign in</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="main">
+                <h2>Your Library is Empty</h2>
+                <p style="margin-top: 14px; margin-left: 30px;">Start adding your favorite songs, albums, and playlists to fill your library.</p>
+                <div class="playlist" id="playlist">
+                    <h3>Recommended for You</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Tum Mile</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Javed Ali</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Blinding Lights</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: The Weekend</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Watermelon Sugar</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Harry Styles</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Dil Dhadakne Do</p>
+                                    <p style="color: gray; font-size: 11px;">Artists: Priyanka Chopra, Farhan...</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Channa Mereya</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Arijit Singh</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>New Releases</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Vampire</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Olivia Rodrigo</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Maan Meri Jaan</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: King</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Jhoome Jo Pathaan</p>
+                                    <p style="color: gray; font-size: 11px;">Artists: Arijit Singh, Sukriti...</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Apna Bana Le</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Arijit Singh</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Anti-Hero</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Taylor Swift</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Genres You Might Like</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Levitating</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Dua Lipa</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Chikni Chameli</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Shreya Ghoshal</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Save Your Tears</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: The Weekend</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Makhna</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Tanishk Bagchi</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Gallan Goodiyaan</p>
+                                    <p style="color: gray; font-size: 11px;">Artists: Yashita Sharma, Manish...</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist" id="playlist">
+                    <h3>Top Recommendations</h3>
+                    <div class="albums">
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-lover"
+                                    style="background-image: url('images/lover.jfif');">
+                                </div>
+                                <div class="box-text">
+                                    <p>Kesariya</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Arijit Singh</p>
+                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" id="box-img-speaknow"
+                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Stay</p>
+                                    <p style="color: gray; font-size: 11px;">Artists: The Kid LAROI, Justin...</p>
+                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Tere Pyaar Mein</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Arijit Singh</p>
+                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Montero (Call Me By...</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Lil Nas X</p>
+                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                                <div class="box-text">
+                                    <p>Pehla Pyaar</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Javed Ali</p>
+                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function redirectToBrowse() {
+                // Redirect user to the music browse page
+                window.location.href = 'explore.html';
+            }
+
+            function addToLibrary(itemId) {
+                // Example action: add the selected item to the user's library
+                alert(`Item ${itemId} added to your library!`);
+            }
+        </script>
+
+    </div>
     </div>
 </body>
+
 </html>

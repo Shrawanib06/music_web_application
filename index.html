@@ -17,39 +17,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Panda</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                Panda
-            </div>
-            <div class="right">
-                <ul>
-                    <li class="signin">Sign in</li>
-                    <li class="login">login</li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
     <div class="intro">
-        <div class="heading">
-            Connect with Music like Never Before
+        <header>
+            <nav>
+                <div class="left">
+                    Panda
+                </div>
+                <div class="right">
+                    <ul>
+                        <li id="signin" class="signin">Sign in</li>
+                        <li id="login" class="login">Sign up</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="heading">
+                Connect with Music like Never Before
+            </div>
+            <div class="title">
+                Discover, Feel, Connect
+            </div>
+            <a href="home.html"><button>Get started</button></a>
         </div>
-        <div class="title">
-            Discover, Feel, Connect
+    </div>
+
+    <div id="container1" class="container1">
+        <div class="form-box login1">
+            <form action="">
+                <h1>Sign In</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+                <p>or Sign In with social platforms</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </form>
         </div>
-        <a href="home.html"><button>Get started</button></a>
+
+        <div class="form-box register">
+            <form action="">
+                <h1>Sign Up</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p>or Sign Up with social platforms</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Sign Up</button>
+            </div>
+        </div>
     </div>
 
     <div class="preview">
         <div class="title">
             Discover personalised music experiences with Panda
         </div>
+        <img src="8a6292b1-ef35-45b0-96ee-938771a493b5.png" alt="">
+        <img class="webimg" src="Untitled.png" alt="">
     </div>
 
     <div class="artist">
@@ -57,50 +123,288 @@
         <div class="title">
             Rising tracks from new and upcoming artists
         </div>
+        <div class="slider-container">
+            <div class="artistimg">
+                <div class="one">
+                    <img src="images/Shag.jfif" alt="">
+                </div>
+                <div class="four">
+                    <div class="first">
+                        <img src="images/Arijit Singh (1).jfif" alt="">
+                        <img src="images/download.jfif" alt="">
+                    </div>
+                    <div class="second">
+                        <img src="images/download (1).jfif" alt="">
+                        <img src="images/Shreya Ghoshal (1).jfif" alt="">
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="images/ariana.jfif" alt="">
+                </div>
+                <div class="one">
+                    <img src="images/Billieeeee.jfif" alt="">
+                </div>
+                <div class="four">
+                    <div class="first">
+                        <img src="images/cris.jpg" alt="">
+                        <img src="images/dua lipa.jpg" alt="">
+                    </div>
+                    <div class="second">
+                        <img src="images/pritam.jfif" alt="">
+                        <img src="images/Selena Gomez.jfif" alt="">
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="images/shawnimg.jfif" alt="">
+                </div>
+                <div class="four">
+                    <div class="first">
+                        <img src="images/sonunigam.jfif" alt="">
+                        <img src="images/sunidhi.jpg" alt="">
+                    </div>
+                    <div class="second">
+                        <img src="images/download (2).jfif" alt="">
+                        <img src="images/Shankar Mahadevan.jfif" alt="">
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="images/Jubin.jfif" alt="">
+                </div>
+                <div class="one">
+                    <img src="images/download (3).jfif" alt="">
+                </div>
+                <div class="four">
+                    <div class="first">
+                        <img src="images/arijit singh.jfif" alt="">
+                        <img src="images/ed sheeren.jfif" alt="">
+                    </div>
+                    <div class="second">
+                        <img src="images/justin bieber.jfif" alt="">
+                        <img src="images/shreya ghoshal.jfif" alt="">
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="images/Taylor Swift.jpg" alt="">
+                </div>
+                <div class="four">
+                    <div class="first">
+                        <img src="images/arijit singh.jfif" alt="">
+                        <img src="images/ed sheeren.jfif" alt="">
+                    </div>
+                    <div class="second">
+                        <img src="images/justin bieber.jfif" alt="">
+                        <img src="images/shreya ghoshal.jfif" alt="">
+                    </div>
+                </div>
+                <div class="one">
+                    <img src="images/Taylor Swift.jpg" alt="">
+                </div>
+                <div class="one">
+                    <img src="images/Taylor Swift.jpg" alt="">
+                </div>
+                <div class="four">
+                    <div class="first">
+                        <img src="images/arijit singh.jfif" alt="">
+                        <img src="images/ed sheeren.jfif" alt="">
+                    </div>
+                    <div class="second">
+                        <img src="images/justin bieber.jfif" alt="">
+                        <img src="images/shreya ghoshal.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="feature">
         <div class="title">
             Why Panda ?
         </div>
+        <div class="reason">
+            <div class="left">
+                <div class="feature1">
+                    <div class="head1">
+                        <h3>
+                            AI-Powered Mood and Taste-Based Recommendations
+                        </h3>
+                    </div>
+                    <div class="descript1">
+                        Get music that perfectly matches your mood and style with smart AI suggestions tailored just for
+                        you. Discover songs that resonate, no matter how you're feeling.
+                    </div>
+                </div>
+                <div class="feature2">
+                    <div class="head1">
+                        <h3>
+                            Customizable Playlists
+                        </h3>
+                    </div>
+                    <div class="descript1">
+                        Create and organize playlists your way! Enjoy smart suggestions, flexible layouts, and intuitive
+                        tools for the ultimate personalized music library.
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="feature3">
+                    <div class="head1">
+                        <h3>
+                            Social & Collaborative Music Sharing
+                        </h3>
+                    </div>
+                    <div class="descript1">
+                        Connect with friends and other music lovers! Build collaborative playlists, share your favorite
+                        tracks, and explore new music through a vibrant social community.
+                    </div>
+                </div>
+                <div class="feature4">
+                    <div class="head1">
+                        <h3>
+                            Creative Media Sharing
+                        </h3>
+                    </div>
+                    <div class="descript1">
+                        Express yourself with photo-based music posts and animated music videos featuring your favorite
+                        songs. Share unique music experiences in creative, visual ways.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <div class="container">
-            <div class="name">
-                Panda
+        <div class="footer">
+            <div class="container name-description">
+                <div class="name">Panda</div>
+                <div class="description">
+                    Panda is an AI-powered music app that offers personalized song recommendations, mood-based
+                    playlists, and easy music discovery for every listener.
+                </div>
             </div>
-            <div class="description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam placeat voluptate voluptates eaque optio
-                provident aspernatur explicabo, dolore deleniti amet error quidem dolores dignissimos tempore assumenda,
-                ipsam perspiciatis sed incidunt!
+
+            <div class="container links">
+                <p>Links</p>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#help">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="container social-media">
+                <p>Social Media</p>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                </ul>
+            </div>
+
+            <div class="container newsletter">
+                <p>Newsletter Sign Up</p>
+                <p style="font-size: 14px;
+    color: #ccc;">Stay updated with the latest from Panda</p>
+                <p style="font-size: 14px;
+    color: #ccc;">Email: <a href="mailto:team@pandamusic.com">team@pandamusic.com</a></p>
+            </div>
+
+            <div class="container quick-links">
+                <p>Quick Links</p>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#library">Library</a></li>
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
             </div>
         </div>
 
-        <div class="container">
-            <ul>
-                <li>links</li>
-                <li>Privacy policy</li>
-                <li>Terms of service</li>
-                <li>Contact</li>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Help center</li>
-            </ul>
-        </div>
-        
-        <div class="container">
-            <ul>
-                <li>links</li>
-                <li>Privacy policy</li>
-                <li>Terms of service</li>
-                <li>Contact</li>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Help center</li>
-            </ul>
+        <div class="copyright">
+            <p>&copy; 2024 Panda Music. All rights reserved.</p>
+            <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
         </div>
     </footer>
+
+    <script>
+        const sliderContainer = document.querySelector('.slider-container');
+        const artistimg = document.querySelector('.artistimg');
+        const slideInterval = 4000; // Time in milliseconds (3 seconds)
+
+        let currentPosition = 0;
+
+        function slideImages() {
+            const containerWidth = sliderContainer.offsetWidth;
+            const totalWidth = artistimg.scrollWidth;
+
+            // Calculate the next position
+            currentPosition -= containerWidth;
+
+            // If we've reached the end, reset to the beginning
+            if (Math.abs(currentPosition) >= totalWidth) {
+                currentPosition = 0;
+            }
+
+            // Apply the sliding transform
+            artistimg.style.transform = `translateX(${currentPosition}px)`;
+        }
+
+        // Start the automatic slider
+        setInterval(slideImages, slideInterval);
+
+        const signinButton = document.getElementById("signin");
+        const loginButton = document.getElementById("login");
+        const container = document.getElementById("container1");
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+        const toggleLeft = document.querySelector('.toggle-left');
+        const toggleRight = document.querySelector('.toggle-right');
+
+        function showContainer() {
+            container.style.display = "flex";
+        }
+
+        function showSignInForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'hidden';
+            document.querySelector('.form-box.login1').style.visibility = 'visible';
+
+            toggleLeft.style.visibility = 'hidden';
+            toggleRight.style.visibility = 'visible';
+            container.classList.add('active');
+        }
+
+        function showSignUpForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'visible';
+            document.querySelector('.form-box.login1').style.visibility = 'hidden';
+
+            toggleLeft.style.visibility = 'visible';
+            toggleRight.style.visibility = 'hidden';
+            container.classList.remove('active');
+        }
+
+        signinButton.addEventListener("click", () => {
+            showSignInForm();
+        });
+
+        loginButton.addEventListener("click", () => {
+            showSignUpForm();
+        });
+
+        registerBtn.addEventListener('click', () => {
+            showSignUpForm();
+        });
+
+        loginBtn.addEventListener('click', () => {
+            showSignInForm();
+        });
+
+    </script>
 
 </body>
 

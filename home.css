@@ -11,6 +11,12 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.home {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    height: 100vh; /* Optional: make sure it takes full viewport height */
+}
+
 .sidebar {
     position: fixed;
     height: 100vh;
@@ -22,7 +28,9 @@ body {
 }
 
 .sidebar.playing-sidebar {
-    height: 88.5vh;
+    /* height: 88.5vh; */
+    height: 100vh;
+    flex: 1;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -122,7 +130,9 @@ body {
     margin-right: 20vw;
     /* width: 65vw; */
     width: 66.2vw;
-    height: 88.5vh;
+    /* height: 88.5vh; */
+    height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -164,6 +174,7 @@ nav {
     align-items: center;
     height: 60px;
     gap: 500px;
+    /* gap: 289px; */
 }
 
 nav.playing-nav {
@@ -486,7 +497,9 @@ nav .right ul li a {
     right: 0;
     top: 0;
     width: 18.8vw;
-    height: 88.5vh;
+    /* height: 88.5vh; */
+    height: 100vh;
+    flex: 1;
     background-color: #141414;
     color: white;
     /* padding: 20px; */
@@ -581,7 +594,7 @@ nav .right ul li a {
 }
 
 
-.music-player {
+/* .music-player {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -591,6 +604,39 @@ nav .right ul li a {
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+.music-player audio {
+    width: 100%;
+    max-width: 600px;
+} */
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+}
+
+.music-player {
+    /* position: fixed;
+    bottom: 0;
+    left: 0; */
+    width: 182vh;
+    background-color: rgb(61 57 70 / 0%);
+    backdrop-filter: blur(16px);
+    /* background-color: #555; */
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    border-radius: 18px;
+    /* margin: 23px 90px; */
 }
 
 .music-player audio {
