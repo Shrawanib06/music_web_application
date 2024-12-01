@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="home.css">
     <title>Panda</title>
 </head>
@@ -32,36 +33,33 @@
                             style="color: #ffffff;"></i>Explore</button></a>
                 <a href="library.html"><button><i class="fa-solid fa-book"
                             style="color: #ffffff;"></i>Library</button></a>
-                <!-- <a href="genres.html"><button><i class="fa-solid fa-list"
-                            style="color: #ffffff;"></i>Genres</button></a> -->
+                <!-- <a href="library.html"><button><i class="fa-solid fa-book" style="color: #ffffff;"></i>Your
+                        Library</button></a> -->
                 <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
-            </div>
-            <div class="section">
                 <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
                             class="icon">Playlist</button></a>
-                <a href="user-playlist.html"><button>User playlist</button></a>
-                <a href="like-songs.html"><button>Like songs</button></a>
-            </div>
-            <div class="section">
+                <!-- <a href="user-playlist.html"><button>User playlist</button></a>
+                <a href="like-songs.html"><button>Like songs</button></a> -->
                 <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
                         Features</button></a>
-                <a href="friends.html"><button>Friends</button></a>
+                <!-- <a href="friends.html"><button>Friends</button></a>
                 <a href="community.html"><button>Community</button></a>
-                <a href="following.html"><button>Following</button></a>
-            </div>
-            <div class="section">
+                <a href="following.html"><button>Following</button></a> -->
+                <a href="AI-features.html"><button><i class="fa-solid fa-robot" style="color: #ffffff;"></i>AI
+                        Features</button></a>
+                <!-- <a href="friends.html"><button>Mood Match</button></a>
+                <a href="community.html"><button>Voice Search</button></a>
+                <a href="following.html"><button>AI Insights</button></a> -->
                 <a href="settings.html"><button><i class="fa-solid fa-gear"
                             style="color: #ffffff;"></i>Settings</button></a>
-                <a href="account-settings.html"><button>Account settings</button></a>
+                <!-- <a href="account-settings.html"><button>Account settings</button></a>
                 <a href="preferences.html"><button>Preferences</button></a>
                 <a href="notification.html"><button>Notification</button></a>
-                <a href="appearance.html"><button>Appearance</button></a>
-            </div>
-            <div class="section">
+                <a href="appearance.html"><button>Appearance</button></a> -->
                 <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
                             style="color: #ffffff;"></i>Help & Support</button></a>
-                <a href="help-center.html"><button>Help center</button></a>
-                <a href="contact-support.html"><button>Contact support</button></a>
+                <!-- <a href="help-center.html"><button>Help center</button></a>
+                <a href="contact-support.html"><button>Contact support</button></a> -->
             </div>
             <div class="footer">
                 <p>&copy; 2024 Panda Music</p>
@@ -87,11 +85,12 @@
                         </div>
                         <div class="right">
                             <ul>
-                                <li class="signin">Sign up</li>
-                                <li class="login">Sign in</li>
+                                <li id="signup" class="signup">Sign up</li>
+                                <li id="signin" class="signin">Sign in</li>
                             </ul>
                         </div>
                     </nav>
+
                     <div class="content">
                         <h1>Today's most played</h1>
                         <h3>"Cruel Summer" by Taylor Swift</h3>
@@ -101,14 +100,79 @@
                         <button
                             onclick="playSong('songs/Cruel_Summer.mp3', 'Cruel Summer', 'Taylor Swift', 'images/lover.jfif', 'August 23, 2019', 'Pop', '2:59', '1.2M', 'This is such a great song!')">
                             Play Now
-                            <i class="fa-solid fa-play"></i>
+                            <i class="fa-solid fa-play" style="margin: 0 6px;"></i>
                         </button>
+                    </div>
+                </div>
+
+                <div id="container1" class="container1">
+                    <div class="form-box login1">
+                        <form action="">
+                            <h1>Sign In</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <div class="forgot-link">
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Sign In</button>
+                            <p>or Sign In with social platforms</p>
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-box register">
+                        <form action="">
+                            <h1>Sign Up</h1>
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" required>
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <p>or Sign Up with social platforms</p>
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="toggle-box">
+                        <div class="toggle-panel toggle-left">
+                            <h1>Hello, Welcome!</h1>
+                            <p>Already have an account?</p>
+                            <button class="btn login-btn">Sign In</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>Welcome Back!</h1>
+                            <p>Don't have an account?</p>
+                            <button class="btn register-btn">Sign Up</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="main">
                     <div class="playlist" id="playlist">
-                        <h3>Some Popular Albums by Taylor Swift</h3>
+                        <div class="heading">
+                            <h3>Some Popular Albums by Taylor Swift</h3>
+                            <a href="">More</a>
+                        </div>
                         <div class="albums">
                             <div class="box">
                                 <div class="box-content">
@@ -162,7 +226,10 @@
                     </div>
 
                     <div class="trending" id="trending">
-                        <h3>Trending</h3>
+                        <div class="heading">
+                            <h3>Trending</h3>
+                            <a href="">More</a>
+                        </div>
                         <div class="albums">
                             <div class="box">
                                 <div class="box-content height">
@@ -229,7 +296,10 @@
                         </div>
                     </div>
                     <div class="new" id="new">
-                        <h3>New releases</h3>
+                        <div class="heading">
+                            <h3>New releases</h3>
+                            <a href="">More</a>
+                        </div>
                         <div class="albums">
                             <div class="box">
                                 <div class="box-content height">
@@ -296,47 +366,53 @@
                         </div>
                     </div>
                     <div class="genres" id="genres">
-                        <h3>Genres</h3>
+                        <div class="heading">
+                            <h3>Genres</h3>
+                            <a href="">More</a>
+                        </div>
                         <div class="albums">
                             <div class="box">
                                 <div class="box-content height2">
                                     <div class="box-img" onclick="loadContent('genre/relax.html')"
-                                        style="background: linear-gradient(to right, #0a00c7, #00a9fb);">
-                                        Relaxing</div>
+                                        style="background: linear-gradient(to right, #2500ff, #00ff62);">
+                                        Indie Music</div>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="box-content height2">
                                     <div class="box-img" onclick="loadContent('genre/party.html')"
-                                        style="background: linear-gradient(to right, #f30707, #ff7c09);">
-                                        Party</div>
+                                        style="background: linear-gradient(to right,  #fff400, #ff0062);">
+                                        Classical Music</div>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="box-content height2">
                                     <div class="box-img" onclick="loadContent('genre/travel.html')"
-                                        style="background: linear-gradient(to right, #006522, #07ff27);">
-                                        Travel</div>
+                                        style="background: linear-gradient(to right, #3d07f3, #ff7c09);">
+                                        Pop Music</div>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="box-content height2">
                                     <div class="box-img" onclick="loadContent('genre/romantic.html')"
-                                        style="background: linear-gradient(to right, #fd002c, #f164aa);">
-                                        Romantic</div>
+                                        style="background: linear-gradient(to right, #fb0000, #0a49ee);">
+                                        Sufi Music</div>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="box-content height2">
                                     <div class="box-img" onclick="loadContent('genre/motivational.html')"
-                                        style="background: linear-gradient(to right, #FF4500, #FFD700);">
-                                        Motivational</div>
+                                        style="background: linear-gradient(to right, #69f307, #09a9ff);">
+                                        Romantic Music</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="artist" id="artists">
-                        <h3>Artists</h3>
+                        <div class="heading">
+                            <h3>Artists</h3>
+                            <a href="">More</a>
+                        </div>
                         <div class="albums">
                             <div class="box">
                                 <div class="box-content">
@@ -630,6 +706,54 @@
                 })
                 .catch(error => console.error('Error loading content:', error));
         }
+
+        const signinButton = document.getElementById("signin");
+        const signupButton = document.getElementById("signup");
+        const container = document.getElementById("container1");
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+        const toggleLeft = document.querySelector('.toggle-left');
+        const toggleRight = document.querySelector('.toggle-right');
+
+        function showContainer() {
+            container.style.display = "flex";
+        }
+
+        function showSignInForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'hidden';
+            document.querySelector('.form-box.login1').style.visibility = 'visible';
+
+            toggleLeft.style.visibility = 'hidden';
+            toggleRight.style.visibility = 'visible';
+            container.classList.add('active');
+        }
+
+        function showSignUpForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'visible';
+            document.querySelector('.form-box.login1').style.visibility = 'hidden';
+
+            toggleLeft.style.visibility = 'visible';
+            toggleRight.style.visibility = 'hidden';
+            container.classList.remove('active');
+        }
+
+        signinButton.addEventListener("click", () => {
+            showSignInForm();
+        });
+
+        signupButton.addEventListener("click", () => {
+            showSignUpForm();
+        });
+
+        registerBtn.addEventListener('click', () => {
+            showSignUpForm();
+        });
+
+        loginBtn.addEventListener('click', () => {
+            showSignInForm();
+        });
 
     </script>
 

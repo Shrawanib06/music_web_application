@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="explore.css">
     <title>Panda</title>
 </head>
@@ -26,41 +27,39 @@
         <div class="sidebar" id="sidebar">
             <div class="name">Panda</div>
             <div class="section">
-                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
+                <a href="home.html"><button><i class="fa-solid fa-house"
+                            style="color: #ffffff;"></i>Home</button></a>
                 <a href="explore.html"><button class="default"><i class="fa-solid fa-magnifying-glass"
                             style="color: #ffffff;"></i>Explore</button></a>
                 <a href="library.html"><button><i class="fa-solid fa-book"
                             style="color: #ffffff;"></i>Library</button></a>
-                <!-- <a href="genres.html"><button><i class="fa-solid fa-list"
-                            style="color: #ffffff;"></i>Genres</button></a> -->
+                <!-- <a href="library.html"><button><i class="fa-solid fa-book" style="color: #ffffff;"></i>Your
+                        Library</button></a> -->
                 <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
-            </div>
-            <div class="section">
                 <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
                             class="icon">Playlist</button></a>
-                <a href="user-playlist.html"><button>User playlist</button></a>
-                <a href="like-songs.html"><button>Like songs</button></a>
-            </div>
-            <div class="section">
+                <!-- <a href="user-playlist.html"><button>User playlist</button></a>
+                <a href="like-songs.html"><button>Like songs</button></a> -->
                 <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
                         Features</button></a>
-                <a href="friends.html"><button>Friends</button></a>
+                <!-- <a href="friends.html"><button>Friends</button></a>
                 <a href="community.html"><button>Community</button></a>
-                <a href="following.html"><button>Following</button></a>
-            </div>
-            <div class="section">
+                <a href="following.html"><button>Following</button></a> -->
+                <a href="AI-features.html"><button><i class="fa-solid fa-robot" style="color: #ffffff;"></i>AI
+                        Features</button></a>
+                <!-- <a href="friends.html"><button>Mood Match</button></a>
+                <a href="community.html"><button>Voice Search</button></a>
+                <a href="following.html"><button>AI Insights</button></a> -->
                 <a href="settings.html"><button><i class="fa-solid fa-gear"
                             style="color: #ffffff;"></i>Settings</button></a>
-                <a href="account-settings.html"><button>Account settings</button></a>
+                <!-- <a href="account-settings.html"><button>Account settings</button></a>
                 <a href="preferences.html"><button>Preferences</button></a>
                 <a href="notification.html"><button>Notification</button></a>
-                <a href="appearance.html"><button>Appearance</button></a>
-            </div>
-            <div class="section">
+                <a href="appearance.html"><button>Appearance</button></a> -->
                 <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
                             style="color: #ffffff;"></i>Help & Support</button></a>
-                <a href="help-center.html"><button>Help center</button></a>
-                <a href="contact-support.html"><button>Contact support</button></a>
+                <!-- <a href="help-center.html"><button>Help center</button></a>
+                <a href="contact-support.html"><button>Contact support</button></a> -->
             </div>
             <div class="footer">
                 <p>&copy; 2024 Panda Music</p>
@@ -84,34 +83,117 @@
                     </div>
                     <div class="right">
                         <ul>
-                            <li class="signin">Sign up</li>
-                            <li class="login">Sign in</li>
+                            <li id="signup" class="signup">Sign up</li>
+                            <li id="signin" class="signin">Sign in</li>
                         </ul>
                     </div>
                 </nav>
             </div>
 
+            <div id="container1" class="container1">
+                <div class="form-box login1">
+                    <form action="">
+                        <h1>Sign In</h1>
+                        <div class="input-box">
+                            <input type="text" placeholder="Username" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Password" required>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <div class="forgot-link">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="btn">Sign In</button>
+                        <p>or Sign In with social platforms</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-google'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <form action="">
+                        <h1>Sign Up</h1>
+                        <div class="input-box">
+                            <input type="text" placeholder="Username" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Email" required>
+                            <i class='bx bxs-envelope'></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" placeholder="Password" required>
+                            <i class='bx bxs-lock-alt'></i>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                        <p>or Sign Up with social platforms</p>
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-google'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="toggle-box">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Hello, Welcome!</h1>
+                        <p>Already have an account?</p>
+                        <button class="btn login-btn">Sign In</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Welcome Back!</h1>
+                        <p>Don't have an account?</p>
+                        <button class="btn register-btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="main">
                 <div class="playlist" id="playlist">
-                    <h3>New Albums</h3>
+                    <div class="heading">
+                        <h3>New Albums</h3>
+                        <a href="">More</a>
+                    </div>
                     <div class="albums">
                         <div class="box">
                             <div class="box-content">
-                                <div class="box-img" id="box-img-lover" style="background-image: url('images/lover.jfif');">
+                                <div class="box-img" id="box-img-lover" style="background-image: url('images/hit\ me\ hard\ and\ soft.jpeg');">
                                 </div>
                                 <div class="box-text">
-                                    <h4>Act II</h4>
-                                    <p>Beyonce</p>
+                                    <p>Hit Me Hard and Soft</p>
+                                    <p style="color: gray; font-size: 11px;">Billie Eilish</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
                             <div class="box-content">
                                 <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                    style="background-image: url('images/tortured.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Reputation</h4>
-                                    <p>Taylor Swift</p>
+                                    <p style="font-size: 12px;">The Tortured Poets Department</p>
+                                    <p style="color: gray; font-size: 11px;">Taylor Swift</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Eternal_Sunshine.png');"></div>
+                                <div class="box-text">
+                                    <p>Eternal Sunshine</p>
+                                    <p style="color: gray; font-size: 11px;">Ariana Grande</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content">
+                                <div class="box-img" style="background-image: url('images/Right_Place\,_Wrong_Person.png');"></div>
+                                <div class="box-text">
+                                    <p style="font-size: 12px;">Right Place, Wrong Person</p>
+                                    <p style="color: gray; font-size: 11px;">RM</p>
                                 </div>
                             </div>
                         </div>
@@ -119,26 +201,8 @@
                             <div class="box-content">
                                 <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
                                 <div class="box-text">
-                                    <h4>TBA</h4>
-                                    <p>The Weeknd</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
-                                <div class="box-text">
-                                    <h4>Lana</h4>
-                                    <p>SZA</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
-                                <div class="box-text">
-                                    <h4>Access All Areas</h4>
-                                    <p>FLO</p>
+                                    <p>1989</p>
+                                    <p style="color: gray; font-size: 11px;">Taylor Swift</p>
                                 </div>
                             </div>
                         </div>
@@ -150,8 +214,7 @@
                         <h3>Top Charts</h3>
                         <div class="songs-list">
                             <div class="number">01</div>
-                            <div class="loverimg"></div>
-                            <div class="album-song-title">I Forgot That You Existed</div>
+                            <div class="album-song-title">Die with a Smile</div>
                             <div class="likes">
                                 <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
                                 <div class="loved">1.5k</div>
@@ -160,7 +223,7 @@
                         </div>
                         <div class="songs-list" onclick="playSong('songs/Cruel_Summer.mp3', 'Cruel Summer', 'Taylor Swift', 'images/lover.jfif', 'August 23, 2019', 'Pop', '2:59', '1.2M', 'This is such a great song!')">
                             <div class="number">02</div>
-                            <div class="loverimg"></div>
+                            <!-- <div class="loverimg"></div> -->
                             <div class="album-song-title">Cruel Summer</div>
                             <div class="likes">
                                 <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
@@ -170,8 +233,7 @@
                         </div>
                         <div class="songs-list">
                             <div class="number">03</div>
-                            <div class="loverimg"></div>
-                            <div class="album-song-title">Lover</div>
+                            <div class="album-song-title">Fortnight</div>
                             <div class="likes">
                                 <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
                                 <div class="loved">1.5k</div>
@@ -180,8 +242,7 @@
                         </div>
                         <div class="songs-list">
                             <div class="number">04</div>
-                            <div class="loverimg"></div>
-                            <div class="album-song-title">The Man</div>
+                            <div class="album-song-title">Please Please Please</div>
                             <div class="likes">
                                 <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
                                 <div class="loved">1.5k</div>
@@ -190,8 +251,7 @@
                         </div>
                         <div class="songs-list">
                             <div class="number">05</div>
-                            <div class="loverimg"></div>
-                            <div class="album-song-title">The Archer</div>
+                            <div class="album-song-title">Lover</div>
                             <div class="likes">
                                 <i class="fa-regular fa-heart heart-icon" style="color: #8a1cff;"></i>
                                 <div class="loved">1.5k</div>
@@ -206,22 +266,22 @@
                                 <div class="box">
                                     <div class="box-content height2">
                                         <div class="box-img" onclick="loadContent('genre/travel.html')"
-                                            style="background: linear-gradient(to right, #006522, #07ff27);">
-                                            Travel</div>
+                                            style="background: linear-gradient(to right, #fff400, #ff0062);">
+                                            Mood-Based</div>
                                     </div>
                                 </div>
                                 <div class="box">
                                     <div class="box-content height2">
                                         <div class="box-img" onclick="loadContent('genre/romantic.html')"
-                                            style="background: linear-gradient(to right, #fd002c, #f164aa);">
-                                            Romantic</div>
+                                            style="background: linear-gradient(to right, #fb0000, #0a49ee);">
+                                            Genre-Based</div>
                                     </div>
                                 </div>
                                 <div class="box">
                                     <div class="box-content height2">
                                         <div class="box-img" onclick="loadContent('genre/motivational.html')"
-                                            style="background: linear-gradient(to right, #FF4500, #FFD700);">
-                                            Motivational</div>
+                                            style="background: linear-gradient(to right, #69f307, #09a9ff);">
+                                            Activity-Based</div>
                                     </div>
                                 </div>
                             </div>
@@ -229,22 +289,22 @@
                                 <div class="box">
                                     <div class="box-content height2">
                                         <div class="box-img" onclick="loadContent('genre/relax.html')"
-                                            style="background: linear-gradient(to right, #0a00c7, #00a9fb);">
-                                            Relaxing</div>
+                                            style="background: linear-gradient(to right, #2500ff, #00ff62);">
+                                            Trending Now</div>
                                     </div>
                                 </div>
                                 <div class="box">
                                     <div class="box-content height2">
                                         <div class="box-img" onclick="loadContent('genre/party.html')"
-                                            style="background: linear-gradient(to right, #f30707, #ff7c09);">
-                                            Party</div>
+                                            style="background: linear-gradient(to right, #2bff02, #ff0909);">
+                                            Personalized</div>
                                     </div>
                                 </div>
                                 <div class="box">
                                     <div class="box-content height2">
                                         <div class="box-img" onclick="loadContent('genre/travel.html')"
-                                            style="background: linear-gradient(to right, #006522, #07ff27);">
-                                            Travel</div>
+                                            style="background: linear-gradient(to right, #3d07f3, #ff7c09);">
+                                            Artist-Focused</div>
                                     </div>
                                 </div>
                             </div>
@@ -253,52 +313,50 @@
                 </div>
 
                 <div class="playlist" id="playlist">
-                    <h3 style="margin-top: 58px;">Discover New Artists</h3>
+                    <div class="heading">
+                        <h3 style="margin-top: 58px;">Discover New Artists</h3>
+                        <a href="">More</a>
+                    </div>
                     <div class="albums">
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-lover" style="background-image: url('images/lover.jfif');">
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" id="box-img-lover" style="background-image: url('images/sidharth.jpg');">
                                 </div>
                                 <div class="box-text">
-                                    <h4>Act II</h4>
-                                    <p>Beyonce</p>
+                                    <p>Siddhant Chaturvedi</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
+                            <div class="box-content" style="height: 251px;">
                                 <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                    style="background-image: url('images/maude.jpeg');"></div>
                                 <div class="box-text">
-                                    <h4>Reputation</h4>
-                                    <p>Taylor Swift</p>
+                                    <p>Maude Latour</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/sekou.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>TBA</h4>
-                                    <p>The Weeknd</p>
+                                    <p>Sekou</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/yohani.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Lana</h4>
-                                    <p>SZA</p>
+                                    <p>Yohani</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/nikita.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Access All Areas</h4>
-                                    <p>FLO</p>
+                                    <p>Nikhita Gandhi</p>
                                 </div>
                             </div>
                         </div>
@@ -306,52 +364,55 @@
                 </div>
 
                 <div class="playlist" id="playlist">
-                    <h3 style="margin-top: 58px;">New Albums</h3>
+                    <div class="heading">
+                        <h3 style="margin-top: 58px;">New Releases</h3>
+                        <a href="">More</a>
+                    </div>
                     <div class="albums">
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-lover" style="background-image: url('images/lover.jfif');">
-                                </div>
+                            <div class="box-content height">
+                                <div class="box-img" style="background-image: url('images/naina.jfif');"></div>
                                 <div class="box-text">
-                                    <h4>Act II</h4>
-                                    <p>Beyonce</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/speaknow.jfif');"></div>
-                                <div class="box-text">
-                                    <h4>Reputation</h4>
-                                    <p>Taylor Swift</p>
+                                    <p>Naina</p>
+                                    <p style="color: gray; font-size: 11px;">Artists: Diljit Dosanjh...</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                            <div class="box-content height">
+                                <div class="box-img" style="background-image: url('images/tauba\ tauba.png');">
+                                </div>
                                 <div class="box-text">
-                                    <h4>TBA</h4>
-                                    <p>The Weeknd</p>
+                                    <p>Tauba Tauba</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Karan Aujla</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                            <div class="box-content height">
+                                <div class="box-img" style="background-image: url('images/Akhiyaan-Gulaab.jpg');">
+                                </div>
                                 <div class="box-text">
-                                    <h4>Lana</h4>
-                                    <p>SZA</p>
+                                    <p>Akhiyaan Gulaab</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Mitraz</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                            <div class="box-content height">
+                                <div class="box-img" style="background-image: url('images/dekha\ tenu.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Access All Areas</h4>
-                                    <p>FLO</p>
+                                    <p>Dekha tenu</p>
+                                    <p style="color: gray; font-size: 11px;">Artist: Mahbub Islam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="box-content height">
+                                <div class="box-img" style="background-image: url('images/munjya.jpg');"></div>
+                                <div class="box-text">
+                                    <p>Tainu khabar nahi</p>
+                                    <p style="color: gray; font-size: 11px;">Artists: Arijit Singh, Sachin–...</p>
                                 </div>
                             </div>
                         </div>
@@ -359,105 +420,103 @@
                 </div>
 
                 <div class="playlist" id="playlist">
-                    <h3 style="margin-top: 58px;">Music Videos</h3>
+                    <div class="heading">
+                        <h3 style="margin-top: 58px;">Music Videos</h3>
+                        <a href="">More</a>
+                    </div>
                     <div class="albums">
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-lover" style="background-image: url('images/lover.jfif');">
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" id="box-img-lover" style="background-image: url('images/cruel\ summer.jpg');">
                                 </div>
                                 <div class="box-text">
-                                    <h4>Act II</h4>
-                                    <p>Beyonce</p>
+                                    <p>Cruel Summer</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
+                            <div class="box-content" style="height: 251px;">
                                 <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                    style="background-image: url('images/Aashiqui_2.jpeg');"></div>
                                 <div class="box-text">
-                                    <h4>Reputation</h4>
-                                    <p>Taylor Swift</p>
+                                    <p>Sunn Raha Hai</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/faded.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>TBA</h4>
-                                    <p>The Weeknd</p>
+                                    <p>Faded</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/perfect.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Lana</h4>
-                                    <p>SZA</p>
+                                    <p>Perfect</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/tum\ se\ hi.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Access All Areas</h4>
-                                    <p>FLO</p>
+                                    <p>Tum se hi</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="playlist" id="playlist">
-                    <h3 style="margin-top: 58px;">Podcasts</h3>
+                <div class="playlist" id="playlist" style="display: flex;
+                    flex-direction: column;
+                    margin-bottom: 30px;">
+                    <div class="heading">
+                        <h3 style="margin-top: 58px;">Podcasts</h3>
+                        <a href="">More</a>
+                    </div>
                     <div class="albums">
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-lover" style="background-image: url('images/lover.jfif');">
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" id="box-img-lover" style="background-image: url('images/Song_Exploder.png');">
                                 </div>
                                 <div class="box-text">
-                                    <h4>Act II</h4>
-                                    <p>Beyonce</p>
+                                    <p>Song Exploder</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
+                            <div class="box-content" style="height: 251px;">
                                 <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/speaknow.jfif');"></div>
+                                    style="background-image: url('images/new\ music\ friday.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Reputation</h4>
-                                    <p>Taylor Swift</p>
+                                    <p>New Music Friday</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/behind\ the\ podcast.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>TBA</h4>
-                                    <p>The Weeknd</p>
+                                    <p>Behind the Song</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/producer.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Lana</h4>
-                                    <p>SZA</p>
+                                    <p>The Producer’s Podcast</p>
                                 </div>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
+                            <div class="box-content" style="height: 251px;">
+                                <div class="box-img" style="background-image: url('images/musafir\ stories.jpg');"></div>
                                 <div class="box-text">
-                                    <h4>Access All Areas</h4>
-                                    <p>FLO</p>
+                                    <p>The Musafir Stories</p>
                                 </div>
                             </div>
                         </div>
@@ -468,6 +527,56 @@
 
 
     </div>
+
+    <script>
+        const signinButton = document.getElementById("signin");
+        const signupButton = document.getElementById("signup");
+        const container = document.getElementById("container1");
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+        const toggleLeft = document.querySelector('.toggle-left');
+        const toggleRight = document.querySelector('.toggle-right');
+
+        function showContainer() {
+            container.style.display = "flex";
+        }
+
+        function showSignInForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'hidden';
+            document.querySelector('.form-box.login1').style.visibility = 'visible';
+
+            toggleLeft.style.visibility = 'hidden';
+            toggleRight.style.visibility = 'visible';
+            container.classList.add('active');
+        }
+
+        function showSignUpForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'visible';
+            document.querySelector('.form-box.login1').style.visibility = 'hidden';
+
+            toggleLeft.style.visibility = 'visible';
+            toggleRight.style.visibility = 'hidden';
+            container.classList.remove('active');
+        }
+
+        signinButton.addEventListener("click", () => {
+            showSignInForm();
+        });
+
+        signupButton.addEventListener("click", () => {
+            showSignUpForm();
+        });
+
+        registerBtn.addEventListener('click', () => {
+            showSignUpForm();
+        });
+
+        loginBtn.addEventListener('click', () => {
+            showSignInForm();
+        });
+    </script>
 </body>
 
 </html>

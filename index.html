@@ -31,8 +31,8 @@
                 </div>
                 <div class="right">
                     <ul>
+                        <li id="signup" class="signup">Sign up</li>
                         <li id="signin" class="signin">Sign in</li>
-                        <li id="login" class="login">Sign up</li>
                     </ul>
                 </div>
             </nav>
@@ -114,8 +114,8 @@
         <div class="title">
             Discover personalised music experiences with Panda
         </div>
-        <img src="8a6292b1-ef35-45b0-96ee-938771a493b5.png" alt="">
-        <img class="webimg" src="Untitled.png" alt="">
+        <img src="images/screen.png" alt="">
+        <img class="webimg" src="images/overview.png" alt="">
     </div>
 
     <div class="artist">
@@ -135,18 +135,18 @@
                     </div>
                     <div class="second">
                         <img src="images/download (1).jfif" alt="">
-                        <img src="images/Shreya Ghoshal (1).jfif" alt="">
+                        <img src="images/shreyaimg.jpg" alt="">
                     </div>
                 </div>
                 <div class="one">
-                    <img src="images/ariana.jfif" alt="">
+                    <img src="images/micheal.jpg" alt="">
                 </div>
                 <div class="one">
-                    <img src="images/Billieeeee.jfif" alt="">
+                    <img src="images/billie.jpg" alt="">
                 </div>
                 <div class="four">
                     <div class="first">
-                        <img src="images/cris.jpg" alt="">
+                        <img src="images/lana.jpg" alt="">
                         <img src="images/dua lipa.jpg" alt="">
                     </div>
                     <div class="second">
@@ -163,8 +163,8 @@
                         <img src="images/sunidhi.jpg" alt="">
                     </div>
                     <div class="second">
-                        <img src="images/download (2).jfif" alt="">
-                        <img src="images/Shankar Mahadevan.jfif" alt="">
+                        <img src="images/arman.jpg" alt="">
+                        <img src="images/v.jpg" alt="">
                     </div>
                 </div>
                 <div class="one">
@@ -175,41 +175,41 @@
                 </div>
                 <div class="four">
                     <div class="first">
-                        <img src="images/arijit singh.jfif" alt="">
-                        <img src="images/ed sheeren.jfif" alt="">
+                        <img src="images/kumar sanu.jpg" alt="">
+                        <img src="images/badshah.jpg" alt="">
                     </div>
                     <div class="second">
-                        <img src="images/justin bieber.jfif" alt="">
-                        <img src="images/shreya ghoshal.jfif" alt="">
+                        <img src="images/neha.jpg" alt="">
+                        <img src="images/diljit.jpg" alt="">
                     </div>
                 </div>
                 <div class="one">
-                    <img src="images/Taylor Swift.jpg" alt="">
+                    <img src="images/ariana.jpg" alt="">
                 </div>
                 <div class="four">
                     <div class="first">
-                        <img src="images/arijit singh.jfif" alt="">
-                        <img src="images/ed sheeren.jfif" alt="">
+                        <img src="images/shakira.jpg" alt="">
+                        <img src="images/bruno.jpg" alt="">
                     </div>
                     <div class="second">
-                        <img src="images/justin bieber.jfif" alt="">
-                        <img src="images/shreya ghoshal.jfif" alt="">
+                        <img src="images/alka.jpg" alt="">
+                        <img src="images/the weeknd.jpg" alt="">
                     </div>
                 </div>
                 <div class="one">
-                    <img src="images/Taylor Swift.jpg" alt="">
+                    <img src="images/lata.jpg" alt="">
                 </div>
                 <div class="one">
-                    <img src="images/Taylor Swift.jpg" alt="">
+                    <img src="images/Jungkook.jpg" alt="">
                 </div>
                 <div class="four">
                     <div class="first">
-                        <img src="images/arijit singh.jfif" alt="">
-                        <img src="images/ed sheeren.jfif" alt="">
+                        <img src="images/kishor.jpg" alt="">
+                        <img src="images/charlie.jpg" alt="">
                     </div>
                     <div class="second">
-                        <img src="images/justin bieber.jfif" alt="">
-                        <img src="images/shreya ghoshal.jfif" alt="">
+                        <img src="images/rm.jpg" alt="">
+                        <img src="images/Shankar Mahadevan.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -357,7 +357,7 @@
         setInterval(slideImages, slideInterval);
 
         const signinButton = document.getElementById("signin");
-        const loginButton = document.getElementById("login");
+        const signupButton = document.getElementById("signup");
         const container = document.getElementById("container1");
         const registerBtn = document.querySelector('.register-btn');
         const loginBtn = document.querySelector('.login-btn');
@@ -392,7 +392,7 @@
             showSignInForm();
         });
 
-        loginButton.addEventListener("click", () => {
+        signupButton.addEventListener("click", () => {
             showSignUpForm();
         });
 

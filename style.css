@@ -45,7 +45,7 @@ nav .right ul li a{
     padding: 4px 10px;
 }
 
-.signin {
+.signup {
     background-color: #8a1cff;
     color: #ffffff;
     border-radius: 10px;
@@ -54,7 +54,7 @@ nav .right ul li a{
     cursor: pointer;
 }
 
-.signin:hover {
+.signup:hover {
     border: 2px solid #8a1cff;
     border-radius: 10px;
     padding: 3px 10px;
@@ -62,14 +62,14 @@ nav .right ul li a{
     color: white;
 }
 
-.login {
+.signin {
     border: 2px solid #8a1cff;
     border-radius: 10px;
     padding: 3px 10px;
     cursor: pointer;
 }
 
-.login:hover {
+.signin:hover {
     background-color: #8a1cff;
     color: #ffffff;
 }

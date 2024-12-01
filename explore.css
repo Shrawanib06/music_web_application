@@ -62,7 +62,7 @@ body {
     align-items: center;
     gap: 15px;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-bottom: 13px;
     border: none;
     outline: none;
     border-radius: 7px;
@@ -194,7 +194,7 @@ nav .right ul li a {
     padding: 4px 10px;
 }
 
-.signin {
+.signup {
     background-color: #8a1cff;
     color: #ffffff;
     border-radius: 10px;
@@ -203,7 +203,7 @@ nav .right ul li a {
     cursor: pointer;
 }
 
-.signin:hover {
+.signup:hover {
     border: 2px solid #8a1cff;
     border-radius: 10px;
     padding: 3px 10px;
@@ -211,16 +211,207 @@ nav .right ul li a {
     color: white;
 }
 
-.login {
+.signin {
     border: 2px solid #8a1cff;
     border-radius: 10px;
     padding: 3px 10px;
     cursor: pointer;
 }
 
-.login:hover {
+.signin:hover {
     background-color: #8a1cff;
     color: #ffffff;
+}
+
+.container1 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    width: 775px;
+    height: 460px;
+    background: #141414;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+.form-box{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #999898;
+    text-align: center;
+    z-index: 1;
+    transition: .6s ease-in-out 1.2s, visibility 0s 1s;
+}
+
+.container1.active .form-box{
+    right: 50%;
+}
+
+.form-box.register{
+    visibility: hidden;
+}
+
+form{
+    width: 100%;
+}
+
+.container1 h1{
+    font-size: 36px;
+    margin: -10px 0;
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 67%;
+    padding: 10px 10px;
+    background: #1f1e1e;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.input-box input::placeholder{
+    color: #888;
+    font-weight: 400;
+}
+
+.input-box i{
+    position: absolute;
+    right: 69px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+.forgot-link{
+    margin: -15px 0 15px;
+}
+
+.forgot-link a{
+    font-size: 14.5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.container1 form button {
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #8a1cff;
+    border: 2px solid #8a1cff;
+    color: #141414;
+}
+
+.container1 .toggle-box button {
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #141414;
+    border: 2px solid #141414;
+    color: #8a1cff;
+}
+
+.container1 .toggle-box button:hover {
+    background-color: transparent;
+    color: #141414;
+}
+
+.container1 form button:hover {
+    background-color: transparent;
+    color: #8a1cff;
+}
+
+.container1 p {
+    font-size: 14.5px;
+    margin: 15px 0;
+}
+
+.social-icons a{
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #8a1cff;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.toggle-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #141414;
+}
+
+.toggle-box::before{
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background-color: #8a1cff;
+    border-radius: 150px;
+    z-index: 2;
+    transition: 1.8s ease-in-out;
+}
+
+.container1.active .toggle-box::before{
+    left: 50%;
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: .6s ease-in-out;
+}
+
+.toggle-panel.toggle-left{
+    left: 0;
+    transition-delay: 1.2s;
+}
+
+.container1.active .toggle-panel.toggle-left{
+    left: -50%;
+    transition-delay: .6s;
+}
+
+.toggle-panel.toggle-right{
+    right: -50%;
+    transition-delay: .6s;
+}
+
+.container1.active .toggle-panel.toggle-right{
+    right: 0;
+    transition-delay: 1.2s;
 }
 
 .main {
@@ -273,6 +464,24 @@ nav .right ul li a {
 
 .box-img.playing-img {
     height: 160px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading a{
+    margin-right: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.heading a:hover{
+    color: #8a1cff;
 }
 
 .box-content p {
@@ -334,11 +543,11 @@ nav .right ul li a {
 .songs-list {
     display: flex;
     align-items: center;
-    height: 43px;
+    height: 50px;
     border-radius: 10px;
     margin: 10px;
     padding: 0 18px;
-    gap: 32px;
+    gap: 30px;
 }
 
 .songs-list:hover {
@@ -346,14 +555,31 @@ nav .right ul li a {
 }
 
 .album-song-title {
-    width: 794px;
+    display: flex;
+    justify-content: center;
+    width: 264px;
+}
+
+.songs-list .loverimg{
+    display: flex;
+    justify-content: center;
+    background-image: url(images/lover.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
 }
 
 .number {
-    width: 20px;
+    display: flex;
+    justify-content: center;
+    width: 38px;
 }
 
 .time {
+    display: flex;
+    justify-content: center;
     width: 49px;
 }
 
