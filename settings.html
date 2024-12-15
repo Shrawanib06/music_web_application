@@ -79,7 +79,8 @@
                     <div class="form-box login1">
                         <form action="">
                             <h1>Sign In</h1>
-                            <i class="fa-solid fa-xmark" style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
+                            <i class="fa-solid fa-xmark"
+                                style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
                             <div class="input-box">
                                 <input type="text" placeholder="Username" required>
                                 <i class='bx bxs-user'></i>
@@ -103,7 +104,8 @@
                     <div class="form-box register">
                         <form action="">
                             <h1>Sign Up</h1>
-                            <i class="fa-solid fa-xmark" style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
+                            <i class="fa-solid fa-xmark"
+                                style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
                             <div class="input-box">
                                 <input type="text" placeholder="Username" required>
                                 <i class='bx bxs-user'></i>
@@ -304,6 +306,12 @@
         closeIcons.forEach(icon => {
             icon.addEventListener('click', closeContainer);  // Hide the container when clicked
         });
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
     </script>
 </body>
 

@@ -296,6 +296,12 @@
         closeIcons.forEach(icon => {
             icon.addEventListener('click', closeContainer);  // Hide the container when clicked
         });
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
     </script>
 </body>
 
