@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="AI-features.css">
+    <title>Vibra</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="sidebar" id="sidebar">
+            <div class="name">Vibra</div>
+            <div class="section">
+                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
+                <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i>Explore</button></a>
+                <a href="library.html"><button><i class="fa-solid fa-book"
+                            style="color: #ffffff;"></i>Library</button></a>
+                <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
+                <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
+                            class="icon">Playlist</button></a>
+                <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
+                        Features</button></a>
+                <a href="AI-features.html"><button class="default"><i class="fa-solid fa-robot"
+                            style="color: #ffffff;"></i>AI
+                        Features</button></a>
+                <a href="settings.html"><button><i class="fa-solid fa-gear"
+                            style="color: #ffffff;"></i>Settings</button></a>
+                <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
+                            style="color: #ffffff;"></i>Help & Support</button></a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 Vibra Music</p>
+                <p><a href="#privacy-policy">Privacy Policy</a></p>
+                <p><a href="#terms-of-service">Terms of Service</a></p>
+                <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
+            </div>
+        </div>
+
+        <div class="homepage" id="homepage">
+            <div class="page" id="page">
+                <div class="banner">
+                    <nav id="nav-bar">
+                        <div class="left">
+                            <div class="search-box">
+                                <div class="row">
+                                    <input type="text" id="input-box"
+                                        placeholder="Search for songs, artists, or albums…" autocomplete="off">
+                                    <button><i class="fa-solid fa-magnifying-glass"
+                                            style="color: #ffffff;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li id="signup" class="signup">Sign up</li>
+                                <li id="signin" class="signin">Sign in</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="container1" class="container1">
+                    <div class="form-box login1">
+                        <form action="">
+                            <h1>Sign In</h1>
+                            <i class="fa-solid fa-xmark"
+                                style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <div class="forgot-link">
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Sign In</button>
+                            <p>or Sign In with social platforms</p>
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-box register">
+                        <form action="">
+                            <h1>Sign Up</h1>
+                            <i class="fa-solid fa-xmark"
+                                style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" required>
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <p>or Sign Up with social platforms</p>
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="toggle-box">
+                        <div class="toggle-panel toggle-left">
+                            <h1>Hello, Welcome!</h1>
+                            <p>Already have an account?</p>
+                            <button class="btn login-btn">Sign In</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>Welcome Back!</h1>
+                            <p>Don't have an account?</p>
+                            <button class="btn register-btn">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main">
+                <div class="intro">
+                    <h2>Discover Music, Powered by AI</h2>
+                    <p>Experience personalized music like never before!</p>
+                </div>
+                <div class="card1">
+                    <div class="section1">
+                        <div class="left-container">
+                            <p style="font-size: 39px; color: #8a1cff;">Mood-Based <br> Recommendations</p>
+                            <p>Find the perfect soundtrack for every mood!</p>
+                            <p style="color: gray; font-size: 11px;">select your mood from a range of options using mood
+                                emojis</p>
+                        </div>
+                        <div class="right-container">
+                            <div class="three-container">
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f600/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f600/512.gif" alt="😀"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Happy</p>
+                                </div>
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60c/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60c/512.gif" alt="😌"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Relaxed</p>
+                                </div>
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif" alt="😞"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Sad</p>
+                                </div>
+                            </div>
+                            <div class="three-container">
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f621/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f621/512.gif" alt="😡"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Angry</p>
+                                </div>
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Motivated</p>
+                                </div>
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/512.gif" alt="😍"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Romantic</p>
+                                </div>
+                            </div>
+                            <div class="three-container">
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.gif" alt="⚡"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Energetic</p>
+                                </div>
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31b/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31b/512.gif" alt="🌛"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Chill</p>
+                                </div>
+                                <div class="block">
+                                    <picture style="display: flex;">
+                                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f30d/512.webp"
+                                            type="image/webp">
+                                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f30d/512.gif" alt="🌍"
+                                            width="80" height="80" style="margin-top: 10px;">
+                                    </picture>
+                                    <p>Adventure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="section2">
+                        <p style="font-size: 39px; color: #8a1cff;">Voice & Expression Analysis</p>
+                        <p>Let your voice and expressions guide your music journey!</p>
+                        <p style="color: gray; font-size: 11px;">Tap the "Speak Now" or "Capture
+                            Emotion" button and let the app analyze your voice or
+                            facial expression. Whether you’re feeling joyful, calm, or introspective, the AI
+                            instantly detects your mood and curates the ideal music just for you.</p>
+                        <div class="icon-button">
+                            <i class="fa-solid fa-microphone" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-camera" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="section3">
+                        <p style="font-size: 39px; color: #8a1cff;">Photo-Driven Music <br> Recommendations</p>
+                        <p>Turn your moments into music!</p>
+                        <p style="color: gray; font-size: 11px;">Drag and drop an image or tap "Upload
+                            a Photo" or "Take a Picture" to let the app analyze its
+                            mood. Whether it’s a serene nature scene, a vibrant cityscape, or a cozy indoor shot, our AI
+                            detects the vibe and curates music that matches its essence.</p>
+                        <div class="icon-button">
+                            <i class="fa-solid fa-upload" style="color: #ffffff;"></i>
+                            <i class="fa-solid fa-camera" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signinButton = document.getElementById("signin");
+        const signupButton = document.getElementById("signup");
+        const container = document.getElementById("container1");
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+        const toggleLeft = document.querySelector('.toggle-left');
+        const toggleRight = document.querySelector('.toggle-right');
+
+        // Get the close icons
+        const closeIcons = document.querySelectorAll('.fa-xmark');
+
+        function showContainer() {
+            container.style.display = "flex";
+        }
+
+        function showSignInForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'hidden';
+            document.querySelector('.form-box.login1').style.visibility = 'visible';
+
+            toggleLeft.style.visibility = 'hidden';
+            toggleRight.style.visibility = 'visible';
+            container.classList.add('active');
+        }
+
+        function showSignUpForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'visible';
+            document.querySelector('.form-box.login1').style.visibility = 'hidden';
+
+            toggleLeft.style.visibility = 'visible';
+            toggleRight.style.visibility = 'hidden';
+            container.classList.remove('active');
+        }
+
+        function closeContainer() {
+            container.style.display = "none";  // Hide the container
+        }
+
+        signinButton.addEventListener("click", () => {
+            showSignInForm();
+        });
+
+        signupButton.addEventListener("click", () => {
+            showSignUpForm();
+        });
+
+        registerBtn.addEventListener('click', () => {
+            showSignUpForm();
+        });
+
+        loginBtn.addEventListener('click', () => {
+            showSignInForm();
+        });
+
+        // Add event listener for close icons
+        closeIcons.forEach(icon => {
+            icon.addEventListener('click', closeContainer);  // Hide the container when clicked
+        });
+    </script>
+</body>
+
+</html>

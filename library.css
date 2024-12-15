@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #0b0a0a;
     color: white;
     font-family: "Poppins", sans-serif;
 }
@@ -115,6 +115,16 @@ body {
     height: 100vh;
     flex-direction: column;
     overflow-y: auto;
+}
+
+.librarypage::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+.librarypage::-webkit-scrollbar-thumb {
+    background-color: #8a1cff2b;
+    border-radius: 10px;
 }
 
 nav {
@@ -283,6 +293,7 @@ form{
     font-size: 16px;
     color: #333;
     font-weight: 500;
+    color: #ffffff
 }
 
 .input-box input::placeholder{

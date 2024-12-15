@@ -20,50 +20,34 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="radio.css">
     <script src="https://unpkg.com/wavesurfer.js@7"></script>
-    <title>Panda</title>
+    <title>Vibra</title>
 </head>
 
 <body>
     <div class="home">
         <div class="sidebar" id="sidebar">
-            <div class="name">Panda</div>
+            <div class="name">Vibra</div>
             <div class="section">
-                <a href="home.html"><button><i class="fa-solid fa-house"
-                            style="color: #ffffff;"></i>Home</button></a>
+                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
                 <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
                             style="color: #ffffff;"></i>Explore</button></a>
                 <a href="library.html"><button><i class="fa-solid fa-book"
                             style="color: #ffffff;"></i>Library</button></a>
-                <!-- <a href="library.html"><button><i class="fa-solid fa-book" style="color: #ffffff;"></i>Your
-                        Library</button></a> -->
-                <a href="radio.html"><button class="default"><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
+                <a href="radio.html"><button class="default"><i class="fa-solid fa-radio"
+                            style="color: #ffffff;"></i>Radio</button></a>
                 <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
                             class="icon">Playlist</button></a>
-                <!-- <a href="user-playlist.html"><button>User playlist</button></a>
-                <a href="like-songs.html"><button>Like songs</button></a> -->
                 <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
                         Features</button></a>
-                <!-- <a href="friends.html"><button>Friends</button></a>
-                <a href="community.html"><button>Community</button></a>
-                <a href="following.html"><button>Following</button></a> -->
                 <a href="AI-features.html"><button><i class="fa-solid fa-robot" style="color: #ffffff;"></i>AI
                         Features</button></a>
-                <!-- <a href="friends.html"><button>Mood Match</button></a>
-                <a href="community.html"><button>Voice Search</button></a>
-                <a href="following.html"><button>AI Insights</button></a> -->
                 <a href="settings.html"><button><i class="fa-solid fa-gear"
                             style="color: #ffffff;"></i>Settings</button></a>
-                <!-- <a href="account-settings.html"><button>Account settings</button></a>
-                <a href="preferences.html"><button>Preferences</button></a>
-                <a href="notification.html"><button>Notification</button></a>
-                <a href="appearance.html"><button>Appearance</button></a> -->
                 <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
                             style="color: #ffffff;"></i>Help & Support</button></a>
-                <!-- <a href="help-center.html"><button>Help center</button></a>
-                <a href="contact-support.html"><button>Contact support</button></a> -->
             </div>
             <div class="footer">
-                <p>&copy; 2024 Panda Music</p>
+                <p>&copy; 2024 Vibra Music</p>
                 <p><a href="#privacy-policy">Privacy Policy</a></p>
                 <p><a href="#terms-of-service">Terms of Service</a></p>
                 <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
@@ -112,9 +96,9 @@
                                         <i class="fa-solid fa-play"></i>
                                         <i class="fa-solid fa-pause" style="display: none;"></i>
                                         <i class="fa-solid fa-forward"></i>
-                                    </div>
-                                    <div class="like">
                                         <i class="fa-regular fa-heart"></i>
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-share"></i>
                                     </div>
                                 </div>
                             </div>
@@ -130,6 +114,8 @@
                 <div class="form-box login1">
                     <form action="">
                         <h1>Sign In</h1>
+                        <i class="fa-solid fa-xmark"
+                            style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
                         <div class="input-box">
                             <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
@@ -153,6 +139,8 @@
                 <div class="form-box register">
                     <form action="">
                         <h1>Sign Up</h1>
+                        <i class="fa-solid fa-xmark"
+                            style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
                         <div class="input-box">
                             <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
@@ -397,7 +385,8 @@
                         </div>
                         <div class="box">
                             <div class="box-content height3">
-                                <div class="box-img" style="background-image: url('images/mohammed-rafi-radio.jpg');"></div>
+                                <div class="box-img" style="background-image: url('images/mohammed-rafi-radio.jpg');">
+                                </div>
                                 <div class="box-text">
                                     <p>Mohammed Rafi Radio</p>
                                 </div>
@@ -413,60 +402,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="playlist" id="playlist">
-                    <h3>Retro Remixes</h3>
-                    <div class="albums">
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-lover"
-                                    style="background-image: url('images/lover.jfif');">
-                                </div>
-                                <div class="box-text">
-                                    <p>Bollywood Beats Reimagined</p>
-                                    <button onclick="loadContent('album/lover.html')">Listen Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/speaknow.jfif');"></div>
-                                <div class="box-text">
-                                    <p>Retro Remixed</p>
-                                    <button onclick="loadContent('album/speaknow.html')">Listen Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/1989.jfif');"></div>
-                                <div class="box-text">
-                                    <p>Mashup Magic</p>
-                                    <button onclick="loadContent('album/1989.html')">Listen Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/red.jfif');"></div>
-                                <div class="box-text">
-                                    <p>Classics with a Twist</p>
-                                    <button onclick="loadContent('album/red.html')">Listen Now</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Folklore.jfif');"></div>
-                                <div class="box-text">
-                                    <p>New Age Disco</p>
-                                    <button onclick="loadContent('album/folklore.html')">Listen Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="playlist2" id="playlist">
                     <div class="heading">
@@ -503,7 +438,8 @@
                         </div>
                         <div class="box">
                             <div class="box-content height3">
-                                <div class="box-img" style="background-image: url('images/voice\ of\ legend.jpg');"></div>
+                                <div class="box-img" style="background-image: url('images/voice\ of\ legend.jpg');">
+                                </div>
                                 <div class="box-text">
                                     <p>Voice of Legends</p>
                                 </div>
@@ -578,10 +514,49 @@
     <script>
         var playIcon = document.querySelector('.fa-play');
         var pauseIcon = document.querySelector('.fa-pause');
+        var forwardIcon = document.querySelector('.fa-forward'); // Forward button
+        var backwardIcon = document.querySelector('.fa-backward'); // Backward button
         var waveformContainer = document.getElementById('waveform');
         var gif = document.querySelector('.gif');
         var jpeg = document.querySelector('.gifimg');
 
+        // Song List
+        var songs = [
+            {
+                src: 'songs/Chura Liya.mp3',
+                name: 'Chura Liya Hai Tumne Jo Dil Ko',
+                artist: 'Mohammed Rafi, Asha Bhosle',
+                image: 'images/chura liya.jfif'
+            },
+            {
+                src: 'songs/Lag Ja Gale.mp3',
+                name: 'Lag Ja Gale',
+                artist: 'Lata Mangeshkar',
+                image: 'images/lag ja.jpg'
+            },
+            {
+                src: 'songs/Jhoomka Gira Re.mp3',
+                name: 'Jhoomka Gira Re',
+                artist: 'Madan Mohan',
+                image: 'images/Mera-Saaya.jpg'
+            },
+            {
+                src: 'songs/Pal Pal Dil Ke Paas.mp3',
+                name: 'Pal Pal Dil Ke Paas',
+                artist: 'Kishore Kumar',
+                image: 'images/Blackmail.jpg'
+            },
+            {
+                src: 'songs/Ajib Dastan Hai Yeh.mp3',
+                name: 'Ajib Dastan Hai Yeh',
+                artist: 'Lata Mangeshkar',
+                image: 'images/ajeeb dastaan.jpg'
+            }
+        ];
+
+        var currentSongIndex = 0;
+
+        // Create the WaveSurfer instance
         var wavesurfer = WaveSurfer.create({
             container: waveformContainer,
             waveColor: '#8a1cff',
@@ -593,14 +568,39 @@
             barRadius: 3
         });
 
-        wavesurfer.load('songs/Chura Liya.mp3');
-        jpeg.style.display = 'block';
-        // Hide the GIF initially
-        gif.style.display = 'none';
+        // Load a song by index
+        function loadSong(index) {
+            var song = songs[index];
+            wavesurfer.load(song.src);
+
+            // Update UI with song details
+            document.querySelector('.retro-song-name p').textContent = song.name;
+            document.querySelector('.retro-song-name p:nth-child(2)').textContent = `Artist Name: ${song.artist}`;
+            document.querySelector('.retro-img img').src = song.image;
+
+            // Reset play/pause state
+            playIcon.style.display = 'inline-block';
+            pauseIcon.style.display = 'none';
+            gif.style.display = 'none'; // Hide GIF
+            jpeg.style.display = 'block'; // Show JPEG
+
+            // Wait for song to load before enabling play
+            wavesurfer.on('ready', function () {
+                // Do not play immediately on load, just prepare
+                playIcon.style.display = 'inline-block';
+                pauseIcon.style.display = 'none';
+            });
+        }
 
         // Toggle Play and Pause
         function togglePlayPause() {
-            wavesurfer.playPause();
+            if (wavesurfer.isPlaying()) {
+                wavesurfer.pause();  // Pause if already playing
+            } else {
+                wavesurfer.play();   // Play if paused
+            }
+
+            // Update the icons based on play state
             if (wavesurfer.isPlaying()) {
                 playIcon.style.display = 'none';
                 pauseIcon.style.display = 'inline-block';
@@ -620,14 +620,47 @@
         // Pause button click event
         pauseIcon.onclick = togglePlayPause;
 
-        // Reset when the song finishes
+        // Next button click event
+        forwardIcon.onclick = function () {
+            currentSongIndex = (currentSongIndex + 1) % songs.length; // Loop to first song after the last one
+            loadSong(currentSongIndex); // Load the next song
+            wavesurfer.on('ready', function () {
+                wavesurfer.play();  // Play the next song immediately
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline-block';
+                gif.style.display = 'block'; // Show GIF when playing
+                jpeg.style.display = 'none'; // Hide JPEG
+            });
+        };
+
+        // Back button click event
+        backwardIcon.onclick = function () {
+            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length; // Loop to last song if at the first one
+            loadSong(currentSongIndex); // Load the previous song
+            wavesurfer.on('ready', function () {
+                wavesurfer.play();  // Play the previous song immediately
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline-block';
+                gif.style.display = 'block'; // Show GIF when playing
+                jpeg.style.display = 'none'; // Hide JPEG
+            });
+        };
+
+        // Reset when the song finishes and play the next song
         wavesurfer.on('finish', function () {
-            playIcon.style.display = 'inline-block';
-            pauseIcon.style.display = 'none';
-            gif.style.display = 'none'; // Hide GIF when song finishes
-            jpeg.style.display = 'block'; // Show JPEG
-            wavesurfer.stop();
+            currentSongIndex = (currentSongIndex + 1) % songs.length; // Move to the next song
+            loadSong(currentSongIndex); // Load the next song and start playing
+            wavesurfer.on('ready', function () {
+                wavesurfer.play();  // Start playing automatically
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline-block';
+                gif.style.display = 'block'; // Show GIF when playing
+                jpeg.style.display = 'none'; // Hide JPEG
+            });
         });
+
+        // Initialize the first song but do not play it initially
+        loadSong(currentSongIndex);
 
         const signinButton = document.getElementById("signin");
         const signupButton = document.getElementById("signup");
@@ -636,6 +669,9 @@
         const loginBtn = document.querySelector('.login-btn');
         const toggleLeft = document.querySelector('.toggle-left');
         const toggleRight = document.querySelector('.toggle-right');
+
+        // Get the close icons
+        const closeIcons = document.querySelectorAll('.fa-xmark');
 
         function showContainer() {
             container.style.display = "flex";
@@ -661,6 +697,10 @@
             container.classList.remove('active');
         }
 
+        function closeContainer() {
+            container.style.display = "none";  // Hide the container
+        }
+
         signinButton.addEventListener("click", () => {
             showSignInForm();
         });
@@ -675,6 +715,11 @@
 
         loginBtn.addEventListener('click', () => {
             showSignInForm();
+        });
+
+        // Add event listener for close icons
+        closeIcons.forEach(icon => {
+            icon.addEventListener('click', closeContainer);  // Hide the container when clicked
         });
     </script>
 </body>

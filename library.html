@@ -19,50 +19,33 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="library.css">
-    <title>Panda</title>
+    <title>Vibra</title>
 </head>
 
 <body>
     <div class="home">
         <div class="sidebar" id="sidebar">
-            <div class="name">Panda</div>
+            <div class="name">Vibra</div>
             <div class="section">
-                <a href="home.html"><button><i class="fa-solid fa-house"
-                            style="color: #ffffff;"></i>Home</button></a>
+                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
                 <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
                             style="color: #ffffff;"></i>Explore</button></a>
                 <a href="library.html"><button class="default"><i class="fa-solid fa-book"
                             style="color: #ffffff;"></i>Library</button></a>
-                <!-- <a href="library.html"><button><i class="fa-solid fa-book" style="color: #ffffff;"></i>Your
-                        Library</button></a> -->
                 <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
                 <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
                             class="icon">Playlist</button></a>
-                <!-- <a href="user-playlist.html"><button>User playlist</button></a>
-                <a href="like-songs.html"><button>Like songs</button></a> -->
                 <a href="social-features.html"><button><i class="fa-solid fa-hashtag" style="color: #ffffff;"></i>Social
                         Features</button></a>
-                <!-- <a href="friends.html"><button>Friends</button></a>
-                <a href="community.html"><button>Community</button></a>
-                <a href="following.html"><button>Following</button></a> -->
                 <a href="AI-features.html"><button><i class="fa-solid fa-robot" style="color: #ffffff;"></i>AI
                         Features</button></a>
-                <!-- <a href="friends.html"><button>Mood Match</button></a>
-                <a href="community.html"><button>Voice Search</button></a>
-                <a href="following.html"><button>AI Insights</button></a> -->
                 <a href="settings.html"><button><i class="fa-solid fa-gear"
                             style="color: #ffffff;"></i>Settings</button></a>
-                <!-- <a href="account-settings.html"><button>Account settings</button></a>
-                <a href="preferences.html"><button>Preferences</button></a>
-                <a href="notification.html"><button>Notification</button></a>
-                <a href="appearance.html"><button>Appearance</button></a> -->
                 <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
                             style="color: #ffffff;"></i>Help & Support</button></a>
-                <!-- <a href="help-center.html"><button>Help center</button></a>
-                <a href="contact-support.html"><button>Contact support</button></a> -->
             </div>
             <div class="footer">
-                <p>&copy; 2024 Panda Music</p>
+                <p>&copy; 2024 Vibra Music</p>
                 <p><a href="#privacy-policy">Privacy Policy</a></p>
                 <p><a href="#terms-of-service">Terms of Service</a></p>
                 <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
@@ -94,6 +77,7 @@
                 <div class="form-box login1">
                     <form action="">
                         <h1>Sign In</h1>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
                         <div class="input-box">
                             <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
@@ -117,6 +101,7 @@
                 <div class="form-box register">
                     <form action="">
                         <h1>Sign Up</h1>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
                         <div class="input-box">
                             <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
@@ -185,7 +170,8 @@
                         </div>
                         <div class="box">
                             <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/Raataan-Lambiyan.jpg');"></div>
+                                <div class="box-img" style="background-image: url('images/Raataan-Lambiyan.jpg');">
+                                </div>
                                 <div class="box-text">
                                     <p>Raatan Lambiyan</p>
                                     <p style="color: gray; font-size: 11px;">Shershaah</p>
@@ -251,7 +237,8 @@
                         </div>
                         <div class="box">
                             <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/hotel\ california.jpg');"></div>
+                                <div class="box-img" style="background-image: url('images/hotel\ california.jpg');">
+                                </div>
                                 <div class="box-text">
                                     <p>Hotel California</p>
                                     <p style="color: gray; font-size: 11px;">Eagles</p>
@@ -374,7 +361,8 @@
                         </div>
                         <div class="box">
                             <div class="box-content">
-                                <div class="box-img" style="background-image: url('images/tera\ yaar\ hoon.jpg');"></div>
+                                <div class="box-img" style="background-image: url('images/tera\ yaar\ hoon.jpg');">
+                                </div>
                                 <div class="box-text">
                                     <p>Tera Yaar Hoon Main</p>
                                     <p style="color: gray; font-size: 11px;">Sonu Ke Titu Ki Sweety</p>
@@ -392,8 +380,7 @@
                     <div class="albums">
                         <div class="box">
                             <div class="box-content">
-                                <div class="box-img" id="box-img-lover"
-                                    style="background-image: url('images/kala\ chashma.jpg');">
+                                <div class="box-img" style="background-image: url('images/kala\ chashma.jpg');">
                                 </div>
                                 <div class="box-text">
                                     <p>Kala Chashma</p>
@@ -403,8 +390,7 @@
                         </div>
                         <div class="box">
                             <div class="box-content">
-                                <div class="box-img" id="box-img-speaknow"
-                                    style="background-image: url('images/levitating.jpg');"></div>
+                                <div class="box-img" style="background-image: url('images/levitating.jpg');"></div>
                                 <div class="box-text">
                                     <p>Levitating</p>
                                     <p style="color: gray; font-size: 11px;">Dua Lipa ft. DaBaby</p>
@@ -444,16 +430,6 @@
         </div>
 
         <script>
-            // function redirectToBrowse() {
-            //     // Redirect user to the music browse page
-            //     window.location.href = 'explore.html';
-            // }
-
-            // function addToLibrary(itemId) {
-            //     // Example action: add the selected item to the user's library
-            //     alert(`Item ${itemId} added to your library!`);
-            // }
-
             const signinButton = document.getElementById("signin");
             const signupButton = document.getElementById("signup");
             const container = document.getElementById("container1");
@@ -461,6 +437,9 @@
             const loginBtn = document.querySelector('.login-btn');
             const toggleLeft = document.querySelector('.toggle-left');
             const toggleRight = document.querySelector('.toggle-right');
+
+            // Get the close icons
+            const closeIcons = document.querySelectorAll('.fa-xmark');
 
             function showContainer() {
                 container.style.display = "flex";
@@ -486,6 +465,10 @@
                 container.classList.remove('active');
             }
 
+            function closeContainer() {
+                container.style.display = "none";  // Hide the container
+            }
+
             signinButton.addEventListener("click", () => {
                 showSignInForm();
             });
@@ -501,9 +484,14 @@
             loginBtn.addEventListener('click', () => {
                 showSignInForm();
             });
+
+            // Add event listener for close icons
+            closeIcons.forEach(icon => {
+                icon.addEventListener('click', closeContainer);  // Hide the container when clicked
+            });
         </script>
 
-    </div>
+
     </div>
 </body>
 

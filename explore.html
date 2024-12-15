@@ -19,13 +19,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="explore.css">
-    <title>Panda</title>
+    <title>Vibra</title>
 </head>
 
 <body>
     <div class="home">
         <div class="sidebar" id="sidebar">
-            <div class="name">Panda</div>
+            <div class="name">Vibra</div>
             <div class="section">
                 <a href="home.html"><button><i class="fa-solid fa-house"
                             style="color: #ffffff;"></i>Home</button></a>
@@ -62,7 +62,7 @@
                 <a href="contact-support.html"><button>Contact support</button></a> -->
             </div>
             <div class="footer">
-                <p>&copy; 2024 Panda Music</p>
+                <p>&copy; 2024 Vibra Music</p>
                 <p><a href="#privacy-policy">Privacy Policy</a></p>
                 <p><a href="#terms-of-service">Terms of Service</a></p>
                 <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
@@ -94,6 +94,7 @@
                 <div class="form-box login1">
                     <form action="">
                         <h1>Sign In</h1>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
                         <div class="input-box">
                             <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
@@ -117,6 +118,7 @@
                 <div class="form-box register">
                     <form action="">
                         <h1>Sign Up</h1>
+                        <i class="fa-solid fa-xmark" style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
                         <div class="input-box">
                             <input type="text" placeholder="Username" required>
                             <i class='bx bxs-user'></i>
@@ -537,6 +539,9 @@
         const toggleLeft = document.querySelector('.toggle-left');
         const toggleRight = document.querySelector('.toggle-right');
 
+        // Get the close icons
+        const closeIcons = document.querySelectorAll('.fa-xmark');
+
         function showContainer() {
             container.style.display = "flex";
         }
@@ -561,6 +566,10 @@
             container.classList.remove('active');
         }
 
+        function closeContainer() {
+            container.style.display = "none";  // Hide the container
+        }
+
         signinButton.addEventListener("click", () => {
             showSignInForm();
         });
@@ -575,6 +584,11 @@
 
         loginBtn.addEventListener('click', () => {
             showSignInForm();
+        });
+
+        // Add event listener for close icons
+        closeIcons.forEach(icon => {
+            icon.addEventListener('click', closeContainer);  // Hide the container when clicked
         });
     </script>
 </body>

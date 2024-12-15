@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="social-features.css">
+    <title>Vibra</title>
+</head>
+
+<body>
+    <div class="home">
+        <div class="sidebar" id="sidebar">
+            <div class="name">Vibra</div>
+            <div class="section">
+                <a href="home.html"><button><i class="fa-solid fa-house" style="color: #ffffff;"></i>Home</button></a>
+                <a href="explore.html"><button><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i>Explore</button></a>
+                <a href="library.html"><button><i class="fa-solid fa-book"
+                            style="color: #ffffff;"></i>Library</button></a>
+                <a href="radio.html"><button><i class="fa-solid fa-radio" style="color: #ffffff;"></i>Radio</button></a>
+                <a href="playlist.html"><button><img src="images/playlist.png" alt="Playlist"
+                            class="icon">Playlist</button></a>
+                <a href="social-features.html"><button class="default"><i class="fa-solid fa-hashtag"
+                            style="color: #ffffff;"></i>Social
+                        Features</button></a>
+                <a href="AI-features.html"><button><i class="fa-solid fa-robot" style="color: #ffffff;"></i>AI
+                        Features</button></a>
+                <a href="settings.html"><button><i class="fa-solid fa-gear"
+                            style="color: #ffffff;"></i>Settings</button></a>
+                <a href="help-support.html"><button><i class="fa-regular fa-circle-question"
+                            style="color: #ffffff;"></i>Help & Support</button></a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 Vibra Music</p>
+                <p><a href="#privacy-policy">Privacy Policy</a></p>
+                <p><a href="#terms-of-service">Terms of Service</a></p>
+                <p style="font-size: 12px;">Designed by Shrawani Bhambare</p>
+            </div>
+        </div>
+
+        <div class="homepage" id="homepage">
+            <div class="page" id="page">
+                <div class="banner">
+                    <nav id="nav-bar">
+                        <div class="left">
+                            <div class="search-box">
+                                <div class="row">
+                                    <input type="text" id="input-box" placeholder="Search for friends..."
+                                        autocomplete="off">
+                                    <button><i class="fa-solid fa-magnifying-glass"
+                                            style="color: #ffffff;"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li id="signup" class="signup">Sign up</li>
+                                <li id="signin" class="signin">Sign in</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <div id="container1" class="container1">
+                    <div class="form-box login1">
+                        <form action="">
+                            <h1>Sign In</h1>
+                            <i class="fa-solid fa-xmark" style="color: #ffffff; font-size: 22px; position: absolute; top: 23px; left: 30px; cursor: pointer;"></i>
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <div class="forgot-link">
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Sign In</button>
+                            <p>or Sign In with social platforms</p>
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-box register">
+                        <form action="">
+                            <h1>Sign Up</h1>
+                            <i class="fa-solid fa-xmark" style="color: #ffffff;  font-size: 22px; position: absolute; top: 23px; right: 30px; cursor: pointer;"></i>
+                            <div class="input-box">
+                                <input type="text" placeholder="Username" required>
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Email" required>
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div class="input-box">
+                                <input type="password" placeholder="Password" required>
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <button type="submit" class="btn">Sign Up</button>
+                            <p>or Sign Up with social platforms</p>
+                            <div class="social-icons">
+                                <a href="#"><i class='bx bxl-google'></i></a>
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="toggle-box">
+                        <div class="toggle-panel toggle-left">
+                            <h1>Hello, Welcome!</h1>
+                            <p>Already have an account?</p>
+                            <button class="btn login-btn">Sign In</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>Welcome Back!</h1>
+                            <p>Don't have an account?</p>
+                            <button class="btn register-btn">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <h2>Social & Collaborative Music Sharing</h2>
+                <p style="margin-left: 30px;">Connect and Share Your Music World</p>
+                <p style="margin-left: 30px; color: gray; font-size: 11px;">Join a vibrant community
+                    of music lovers! Collaborate with friends, build playlists together, share your favorite tracks,
+                    and
+                    explore new music.</p>
+                <div class="buttons">
+                    <button>
+                        Start Collaborating
+                    </button>
+                    <button>
+                        Create a Post
+                    </button>
+                    <button>Invite Friends</button>
+                    <button>Messages</button>
+                </div>
+
+                <div class="container">
+                    <div class="left-container">
+                        <!-- <h2>Trending Posts</h2> -->
+                        <div class="trending-posts">
+                            <div class="upper">
+                                <div class="user">
+                                    <div class="image" style="background-image: url('images/Shag.jpg');"></div>
+                                    <div class="user-info">
+                                        <div class="id">@taylorswift</div>
+                                        <div class="username">Taylor Swift</div>
+                                    </div>
+                                    <p>Follow</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical"
+                                    style="color: #ffffff; margin-right: 18px;"></i>
+                            </div>
+                            <div class="post">
+                                <img src="images/taylor post.jpg" alt="Post 1">
+                                <p style="font-size: 11px;">11:24 PM - Nov 30,2024</p>
+                                <p style="font-size: 12px;">So excited to share this with you all. It’s been a journey
+                                    and I’m so proud of what
+                                    we've created together. 💫💖 #NewMusic</p>
+                                <div class="icons">
+                                    <div class="like">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p style="font-size: 13px;">28k</p>
+                                    </div>
+                                    <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-share" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-posts" style="margin-top: 40px;">
+                            <div class="upper">
+                                <div class="user">
+                                    <div class="image" style="background-image: url('images/dua lipa.jpg');"></div>
+                                    <div class="user-info">
+                                        <div class="id">@dualipa</div>
+                                        <div class="username">Dua Lipa</div>
+                                    </div>
+                                    <p>Follow</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical"
+                                    style="color: #ffffff; margin-right: 18px;"></i>
+                            </div>
+                            <div class="post">
+                                <img src="images/dua post.jpg" alt="Post 1">
+                                <p style="font-size: 11px;">1:24 AM - Nov 27,2024</p>
+                                <p style="font-size: 12px;">India, you’ve outdone yourselves! ✨💃 Last night was
+                                    magical, and I felt your love in every moment. Can’t wait to be back again soon!
+                                    ❤️🙏 #RadicalOptimismTour</p>
+                                <div class="icons">
+                                    <div class="like">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p style="font-size: 13px;">1.2k</p>
+                                    </div>
+                                    <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-share" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-posts" style="margin-top: 40px;">
+                            <div class="upper">
+                                <div class="user">
+                                    <div class="image" style="background-image: url('images/Jungkook.jpg');"></div>
+                                    <div class="user-info">
+                                        <div class="id">@jungkook</div>
+                                        <div class="username">Jungkook</div>
+                                    </div>
+                                    <p>Follow</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical"
+                                        style="color: #ffffff; margin-right: 18px;"></i>
+                            </div>
+                            <div class="post">
+                                <img src="images/jungkook post.png" alt="Post 1">
+                                <p style="font-size: 11px;">4:24 AM - Dec 1,2024</p>
+                                <p style="font-size: 12px;">Last night felt like a dream come true. Thank you all for
+                                    singing and dancing with me—it was truly unforgettable. Let’s do this again soon!
+                                    💜✨ #GoldenStageVibes</p>
+                                <div class="icons">
+                                    <div class="like">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p style="font-size: 13px;">8.2k</p>
+                                    </div>
+                                    <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-share" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-posts" style="margin-top: 40px;">
+                            <div class="upper">
+                                <div class="user">
+                                    <div class="image" style="background-image: url('images/download.jfif');"></div>
+                                    <div class="user-info">
+                                        <div class="id">@edsheeren</div>
+                                        <div class="username">Ed Sheeren</div>
+                                    </div>
+                                    <p>Follow</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical"
+                                            style="color: #ffffff; margin-right: 18px;"></i>
+                            </div>
+                            <div class="post">
+                                <img src="images/Ed-Sheeran post.jpg" alt="Post 1" style="height: 331px;">
+                                <p style="font-size: 11px;">1:14 PM - Nov 12,2024</p>
+                                <p style="font-size: 12px;">Every chord, every lyric, every cheer—this is why I do what
+                                    I do. Thank you for being part of this journey. Till next time! 🎸❤️
+                                    #MathematicsTour</p>
+                                <div class="icons">
+                                    <div class="like">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p style="font-size: 13px;">13k</p>
+                                    </div>
+                                    <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-share" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trending-posts" style="margin-top: 40px;">
+                            <div class="upper">
+                                <div class="user">
+                                    <div class="image" style="background-image: url('images/shreyaimg.jpg');"></div>
+                                    <div class="user-info">
+                                        <div class="id">@shreyaghoshal</div>
+                                        <div class="username">Shreya Ghoshal</div>
+                                    </div>
+                                    <p>Follow</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical"
+                                                style="color: #ffffff; margin-right: 18px;"></i>
+                            </div>
+                            <div class="post">
+                                <img src="images/Shreya post.jpg" alt="Post 1">
+                                <p style="font-size: 11px;">9:10 PM - Oct 13,2024</p>
+                                <p style="font-size: 12px;">The stage, the lights, the love—nothing compares to
+                                    performing for all of you. Thank you for making it magical every single time. 🎶💖
+                                    #LiveMusicMoments</p>
+                                <div class="icons">
+                                    <div class="like">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <p style="font-size: 13px;">3.1k</p>
+                                    </div>
+                                    <i class="fa-regular fa-comment" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-share" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-container">
+                        <!-- <div class="chat-box">
+                            <h3>Chat with Friends</h3>
+                            <div class="chat-window">
+                            </div>
+                            <textarea id="message-input" placeholder="Type a message..."></textarea>
+                            <button id="send-message">Send</button>
+                        </div> -->
+                        <div class="suggestion">
+                            <div class="community-follow">
+                                <div class="heading" style="margin-top: 13px;">
+                                    <h3>Join a Community</h3>
+                                    <a href="">More</a>
+                                </div>
+                                <div class="community-list">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <div class="box-img"
+                                                style="background-image: url('images/SoundCloud.jpg');">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>SoundCloud</p>
+                                                <button>Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <div class="box-img" style="background-image: url('images/bandcamp.jpg');">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Bandcamp</p>
+                                                <button>Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <div class="box-img" style="background-image: url('images/Last_fm.jpg');">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Last.fm</p>
+                                                <button>Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="community-list">
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <div class="box-img"
+                                                style="background-image: url('images/Genius\ Symbol.jpg');">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Rap Genius</p>
+                                                <button>Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <div class="box-img"
+                                                style="background-image: url('images/JazzCorner.jpg');"></div>
+                                            <div class="box-text">
+                                                <p>Jazzcorner</p>
+                                                <button>Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="box-content">
+                                            <div class="box-img" style="background-image: url('images/Mixcloud.jpg');">
+                                            </div>
+                                            <div class="box-text">
+                                                <p>Mixcloud</p>
+                                                <button>Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="heading" style="margin-top: 37px;">
+                                <h3>Follow Your Favorite Artists</h3>
+                                <a href="">More</a>
+                            </div>
+                            <div class="favorite-artists">
+                                <div class="box">
+                                    <div class="box-content">
+                                        <div class="box-img" style="background-image: url('images/Shag.jpg');">
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Taylor Swift</p>
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <div class="box-img" style="background-image: url('images/shreyaimg.jpg');">
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Shreya Ghoshal</p>
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <div class="box-img" style="background-image: url('images/micheal.jpg');"></div>
+                                        <div class="box-text">
+                                            <p>Michael Jackson</p>
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="favorite-artists">
+                                <div class="box">
+                                    <div class="box-content">
+                                        <div class="box-img" style="background-image: url('images/Selena Gomez.jfif');">
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Selena Gomez</p>
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <div class="box-img" style="background-image: url('images/billie.jpg');"></div>
+                                        <div class="box-text">
+                                            <p>Billie Eilish</p>
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <div class="box-img" style="background-image: url('images/shawnimg.jfif');">
+                                        </div>
+                                        <div class="box-text">
+                                            <p>Shawn Mendes</p>
+                                            <button>Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const signinButton = document.getElementById("signin");
+        const signupButton = document.getElementById("signup");
+        const container = document.getElementById("container1");
+        const registerBtn = document.querySelector('.register-btn');
+        const loginBtn = document.querySelector('.login-btn');
+        const toggleLeft = document.querySelector('.toggle-left');
+        const toggleRight = document.querySelector('.toggle-right');
+
+        // Get the close icons
+        const closeIcons = document.querySelectorAll('.fa-xmark');
+
+        function showContainer() {
+            container.style.display = "flex";
+        }
+
+        function showSignInForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'hidden';
+            document.querySelector('.form-box.login1').style.visibility = 'visible';
+
+            toggleLeft.style.visibility = 'hidden';
+            toggleRight.style.visibility = 'visible';
+            container.classList.add('active');
+        }
+
+        function showSignUpForm() {
+            container.style.display = "flex";
+            document.querySelector('.form-box.register').style.visibility = 'visible';
+            document.querySelector('.form-box.login1').style.visibility = 'hidden';
+
+            toggleLeft.style.visibility = 'visible';
+            toggleRight.style.visibility = 'hidden';
+            container.classList.remove('active');
+        }
+
+        function closeContainer() {
+            container.style.display = "none";  // Hide the container
+        }
+
+        signinButton.addEventListener("click", () => {
+            showSignInForm();
+        });
+
+        signupButton.addEventListener("click", () => {
+            showSignUpForm();
+        });
+
+        registerBtn.addEventListener('click', () => {
+            showSignUpForm();
+        });
+
+        loginBtn.addEventListener('click', () => {
+            showSignInForm();
+        });
+
+        // Add event listener for close icons
+        closeIcons.forEach(icon => {
+            icon.addEventListener('click', closeContainer);  // Hide the container when clicked
+        });
+    </script>
+</body>
+
+</html>
